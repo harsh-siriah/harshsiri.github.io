@@ -1,4 +1,33 @@
+:root {
+  --desktop: 1200px;
+  --laptop: 1024px;
+  --tablet: 768px;
+  --phone: 480px;
+}
+
 h1,
 h3 {
   color: white;
+}
+h3 {
+  font-size: 64px;
+  line-height: 64px;
+  @media max-width: 768px {
+    color: red;
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+h1 {
+  font-size: 128px;
+  line-height: 0%;
+}
+
+.bubbles {
+  display: flex;
+  flex-direction: row;
+  @media (max-width: 720px) {
+    flex-direction: column;
+  }
 }

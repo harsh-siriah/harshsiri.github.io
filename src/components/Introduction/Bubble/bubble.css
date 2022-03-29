@@ -1,2 +1,15 @@
-bubble {
+.bubble {
+  border-radius: 20em;
+  height: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 32px;
+}
+
+h5 {
+  font-size: 20px;
 }

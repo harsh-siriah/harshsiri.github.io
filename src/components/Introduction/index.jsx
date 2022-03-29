@@ -7,7 +7,11 @@ function Introduction(props) {
     <div>
       <h3>Hi, my name is</h3>
       <h1>Harsh Siriah</h1>
-      <Bubble text="Mobile App Developer" />
+      <div className="bubbles">
+        <Bubble text="Mobile App Developer" />
+        <Bubble text="Frontend Developer" />
+        <Bubble text="Game Developer" />
+      </div>
     </div>
   );
 }
