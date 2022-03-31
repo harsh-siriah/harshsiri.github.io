@@ -1,18 +1,20 @@
 import React from "react";
+import Stack from "react-bootstrap/Stack";
+import copyTexts from "../../utils/copyTexts";
 import Bubble from "./Bubble";
 import "./introduction.css";
 
 function Introduction(props) {
   return (
-    <div>
-      <h3>Hi, my name is</h3>
-      <h1>Harsh Siriah</h1>
-      <div className="bubbles">
-        <Bubble text="Mobile App Developer" />
-        <Bubble text="Frontend Developer" />
-        <Bubble text="Game Developer" />
-      </div>
-    </div>
+    <Stack>
+      <h3>{copyTexts.hiMyNameIs}</h3>
+      <h1>{copyTexts.name}</h1>
+      <Stack direction="horizontal" gap={1}>
+        <Bubble text={copyTexts.bubble1} />
+        <Bubble text={copyTexts.bubble2} />
+        <Bubble text={copyTexts.bubble3} />
+      </Stack>
+    </Stack>
   );
 }
 
