@@ -5,23 +5,13 @@
   --phone: 480px;
 }
 
+.container-stack {
+  justify-content: center;
+}
+
 h1,
 h3 {
   color: white;
-}
-h3 {
-  font-size: 64px;
-  line-height: 64px;
-  @media max-width: 768px {
-    color: red;
-    font-size: 32px;
-    line-height: 32px;
-  }
-}
-
-h1 {
-  font-size: 128px;
-  line-height: 0%;
 }
 
 .bubbles {
