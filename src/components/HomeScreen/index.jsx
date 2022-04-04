@@ -3,6 +3,7 @@ import { Stack } from "react-bootstrap";
 import ReactPageScroller from "react-page-scroller";
 import colors from "../../utils/colors";
 import About from "../About";
+import Experience from "../Experience";
 import Introduction from "../Introduction";
 import NavigationButtons from "../NavigationButtons";
 import "./HomeScreen.css";
@@ -10,7 +11,10 @@ import "./HomeScreen.css";
 function HomeScreen() {
   const [currentPageNumber, setCurrentPageNumber] = useState(0);
 
-  const componentsList = useMemo(() => [<Introduction />, <About />], []);
+  const componentsList = useMemo(
+    () => [<Introduction />, <About />, <Experience />],
+    []
+  );
 
   const onPageChange = useCallback((pageNum) => {
     setCurrentPageNumber(pageNum);
