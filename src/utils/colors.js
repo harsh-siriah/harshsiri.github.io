@@ -7,4 +7,7 @@ export default {
 
   inActivePageDot: "#B5BEBE",
   activePageDot: "#3FD9E3",
+
+  white: "#FFFFFF",
+  black: "#000000",
 };

@@ -4,6 +4,7 @@ import colors from "../../utils/colors";
 import copyTexts from "../../utils/copyTexts";
 import { ReactComponent as LinkedInLogo } from "../../assets/linkedin-logo.svg";
 import { ReactComponent as GithubLogo } from "../../assets/github-logo.svg";
+import { Links } from "../../utils/links";
 
 const profImage = require("../../assets/Prof_Image.png");
 
@@ -16,8 +17,12 @@ function About() {
         <div style={styles.separator} />
         <p style={styles.aboutText}>{copyTexts.aboutText}</p>
         <Stack gap={5} style={styles.container}>
-          <LinkedInLogo fill={colors.cadetBlue} />
-          <GithubLogo fill={colors.cadetBlue} />
+          <a href={Links.LinkedIn} target="_blank">
+            <LinkedInLogo fill={colors.cadetBlue} />
+          </a>
+          <a href={Links.Github} target="_blank">
+            <GithubLogo fill={colors.cadetBlue} />
+          </a>
         </Stack>
       </Stack>
     </Stack>
