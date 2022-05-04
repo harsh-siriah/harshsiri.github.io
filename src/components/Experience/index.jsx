@@ -1,8 +1,9 @@
-import React, { useState } from "react";
-import { Col, Nav, Row, Tab, Tabs } from "react-bootstrap";
+import React, { useMemo, useState } from "react";
+import { Col, Nav, NavLink, Row, Tab, Tabs } from "react-bootstrap";
 import colors from "../../utils/colors";
 import ExperienceContentTab from "./ExperienceContentTab";
 import experienceData from "../../utils/experience.json";
+import "./Experience.css";
 
 const ExperienceDataKeys = {
   TabTitle: "tab-title",
@@ -18,6 +19,14 @@ function ExperienceTable(props) {
 
   const items = data?.items || [];
 
+  const customNavItem = "custom-nav-item";
+  const customNavItemActive = "custom-nav-item-active";
+  const customNavLink = "custom-nav-link";
+
+  const [selectedCell, setSelectedCell] = useState(data?.data?.[items[0]]?.id);
+
+  console.log({ selectedCell });
+
   return (
     <div style={styles.container}>
       <div style={styles.box}>
@@ -25,36 +34,40 @@ function ExperienceTable(props) {
           <Row>
             <Col sm={3}>
               <Nav variant="tabs">
-                <Nav.Item>
-                  {items.map((item, index) => {
-                    const localData = data?.data?.[item];
-                    const text = localData?.[ExperienceDataKeys.TabTitle];
-                    const key = localData?.[ExperienceDataKeys.id];
+                {items.map((item, index) => {
+                  const localData = data?.data?.[item];
+                  const text = localData?.[ExperienceDataKeys.TabTitle];
+                  const key = localData?.[ExperienceDataKeys.id];
 
-                    const isLastItem = index === items.length - 1;
-                    console.log({ isLastItem, item });
-
-                    return (
-                      <div>
-                        <Nav.Link eventKey={key}>
-                          <p
-                            style={{
-                              textTransform: "none",
-                              textAlign: "center",
-                            }}
-                            className="my-auto"
-                          >
-                            {text}
-                          </p>
+                  const isLastItem = index === items.length - 1;
+                  return (
+                    <div style={{ width: "100%" }}>
+                      <Nav.Item
+                        bsPrefix={
+                          key == selectedCell
+                            ? customNavItemActive
+                            : customNavItem
+                        }
+                      >
+                        <Nav.Link
+                          active={key == selectedCell}
+                          eventKey={key}
+                          bsPrefix={customNavLink}
+                          onClick={() => {
+                            setSelectedCell(key);
+                          }}
+                        >
+                          {text}
                         </Nav.Link>
-                        {!isLastItem ? <div style={styles.separator} /> : null}
-                      </div>
-                    );
-                  })}
-                </Nav.Item>
+                      </Nav.Item>
+                      {!isLastItem ? <div style={styles.separator} /> : null}
+                    </div>
+                  );
+                })}
               </Nav>
             </Col>
-            <Col sm={9}>
+            <Col sm={9} style={{ display: "flex" }}>
+              <div style={styles.verticalSeparator} />
               <Tab.Content>
                 {items.map((item) => {
                   const localData = data?.data?.[item];
@@ -62,7 +75,7 @@ function ExperienceTable(props) {
                   const key = localData?.[ExperienceDataKeys.id];
 
                   return (
-                    <Tab.Pane eventKey={key}>
+                    <Tab.Pane active={key == selectedCell} eventKey={key}>
                       <ExperienceContentTab
                         title={localData?.[ExperienceDataKeys.title]}
                         date={localData?.[ExperienceDataKeys.date]}
@@ -85,48 +98,46 @@ function Experience() {
   const categories = experienceData.categories;
   const data = experienceData.data;
 
-  const [currentTab, setCurrentTab] = useState(categories[0]);
-
   return (
-    <Tabs
-      id="controlled-tab-example"
-      activeKey={currentTab}
-      onSelect={(k) => setCurrentTab(k)}
-      className="mb-3"
-    >
-      {categories.map((category) => {
-        const localData = data[category];
+    <div style={styles.screen}>
+      <h1 style={styles.heading}>WORK EXPERIENCE</h1>
+      <div style={styles.container}>
+        {categories.map((category) => {
+          const localData = data[category];
 
-        const eventKey = localData?.[ExperienceDataKeys.id];
-        const title = localData?.[ExperienceDataKeys.title];
-
-        return (
-          <Tab eventKey={eventKey} title={title}>
-            <ExperienceTable data={localData} />
-          </Tab>
-        );
-      })}
-    </Tabs>
+          return <ExperienceTable data={localData} />;
+        })}
+      </div>
+    </div>
   );
 }
 
 export default Experience;
 
 const styles = {
+  screen: {},
   container: {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     height: "100%",
   },
+  heading: {
+    fontSize: "48px",
+    color: colors.cadetBlue,
+    width: "100%",
+    textAlign: "center",
+    marginTop: "50pt",
+    marginBottom: "20pt",
+  },
   box: {
     // height: "475px",
 
-    width: "900px",
+    width: "70%",
     borderColor: "#B5BEBE",
     borderWidth: "1px",
     borderStyle: "solid",
-    borderRadius: "5px",
+    borderRadius: "11px",
   },
 
   separator: {
@@ -136,5 +147,17 @@ const styles = {
     borderWidth: "0.5px",
     borderStyle: "solid",
     marginLeft: "20px",
+    marginTop: "1pt",
+    marginBottom: "1pt",
+  },
+
+  verticalSeparator: {
+    position: "absolute",
+    height: "50%",
+    width: "1px",
+    borderColor: "#B5BEBE",
+    borderWidth: "0.5px",
+    borderStyle: "solid",
+    alignSelf: "center",
   },
 };

@@ -1,10 +1,5 @@
 {
-  "categories": [
-    "work-experience",
-    "education",
-    "certifications",
-    "research-and-awards"
-  ],
+  "categories": ["work-experience"],
   "data": {
     "work-experience": {
       "id": "work-experience",
@@ -29,7 +24,7 @@
           "tab-title": "University of Applied Sciences, Hochschule Hof",
           "title": "Research Intern & Web Developer",
           "date": "Jan 2021 - Jun 2021",
-          "location": "Hof,Bavaria,Germany (Remote)",
+          "location": "Hof, Bavaria, Germany (Remote)",
           "content": [
             "Worked on a full-stack e-commerce web application using ReactJS, Fastify and MongoDB.",
             "Worked on geospatial data storage and visualization.",
@@ -52,7 +47,7 @@
           "tab-title": "University of Applied Sciences, Hochschule Hof",
           "title": "Semester Exchange Student",
           "date": "Oct 2019 - Feb 2020",
-          "location": "Hof,Bavaria,Germany",
+          "location": "Hof, Bavaria, Germany",
           "content": [
             "Worked on projects in the fields of software engineering, cybersecurity, mobile computing, and database management systems with students from a variety of nationalities like Germans, Japanese, Kazakhs, French, etc."
           ]

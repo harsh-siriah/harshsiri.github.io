@@ -15,7 +15,9 @@ function About() {
       <Stack direction="horizontal" gap={5}>
         <Image roundedCircle={true} src={profImage} style={styles.profImage} />
         <div style={styles.separator} />
-        <p style={styles.aboutText}>{copyTexts.aboutText}</p>
+        <p className="fs-6" style={styles.aboutText}>
+          {copyTexts.aboutText}
+        </p>
         <Stack gap={5} style={styles.container}>
           <a href={Links.LinkedIn} target="_blank">
             <LinkedInLogo fill={colors.cadetBlue} />
