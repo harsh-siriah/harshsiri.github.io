@@ -42,6 +42,7 @@ function ExperienceTable(props) {
                               textTransform: "none",
                               textAlign: "center",
                             }}
+                            className="my-auto"
                           >
                             {text}
                           </p>

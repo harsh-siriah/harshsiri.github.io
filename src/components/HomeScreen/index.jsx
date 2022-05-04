@@ -16,9 +16,18 @@ function HomeScreen() {
     []
   );
 
-  const onPageChange = useCallback((pageNum) => {
-    setCurrentPageNumber(pageNum);
-  }, []);
+  const onPageChange = useCallback(
+    (pageNum) => {
+      setCurrentPageNumber((currentPageNumber) => {
+        if (pageNum > 0 && pageNum < componentsList.length) {
+          console.log({ pageNum });
+          return pageNum;
+        }
+        return currentPageNumber;
+      });
+    },
+    [componentsList.length]
+  );
 
   const onCustomPageNumberSelect = useCallback(
     (pageNum) => {
@@ -61,9 +70,10 @@ function HomeScreen() {
       <Stack direction="horizontal" gap={1}>
         <div style={styles.scrollView}>
           <ReactPageScroller
+            animationTimer={800}
             pageOnChange={onPageChange}
             customPageNumber={currentPageNumber}
-            renderAllPagesOnFirstRender={true}
+            // renderAllPagesOnFirstRender={true}
           >
             {renderPages}
           </ReactPageScroller>

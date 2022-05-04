@@ -5,10 +5,9 @@ import { ReactComponent as CrossLogo } from "../../assets/cross-logo.svg";
 import { Stack } from "react-bootstrap";
 import TransparentButton from "../TransparentButton";
 
+const menuItems = ["About", "Projects", "Experience", "Contact"];
 function NavigationButtons(props) {
   const { onItemSelect } = props;
-
-  const menuItems = ["About", "Projects", "Experience", "Contact"];
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -16,9 +15,12 @@ function NavigationButtons(props) {
     setIsMenuOpen((prevState) => !prevState);
   }, []);
 
-  const _onItemSelect = useCallback((pageNumber) => {
-    onItemSelect?.(pageNumber);
-  });
+  const _onItemSelect = useCallback(
+    (pageNumber) => {
+      onItemSelect?.(pageNumber);
+    },
+    [onItemSelect]
+  );
 
   const renderMenuItems = useMemo(() => {
     return menuItems.map((item, index) => {
@@ -33,7 +35,7 @@ function NavigationButtons(props) {
         </TransparentButton>
       );
     });
-  });
+  }, [_onItemSelect]);
 
   return (
     <div>
