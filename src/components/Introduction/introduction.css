@@ -1,0 +1,23 @@
+:root {
+  --desktop: 1200px;
+  --laptop: 1024px;
+  --tablet: 768px;
+  --phone: 480px;
+}
+
+.container-stack {
+  justify-content: center;
+}
+
+h1,
+h3 {
+  color: white;
+}
+
+.bubbles {
+  display: flex;
+  flex-direction: row;
+  @media (max-width: 720px) {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,16 @@
+.bubble {
+  display: flex;
+  border-radius: 20em;
+  height: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  align-items: center;
+  margin-right: 32px;
+}
+
+h5 {
+  font-size: 20px;
+  text-align: "center";
+}

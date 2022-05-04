@@ -1,0 +1,83 @@
+{
+  "categories": [
+    "work-experience",
+    "education",
+    "certifications",
+    "research-and-awards"
+  ],
+  "data": {
+    "work-experience": {
+      "id": "work-experience",
+      "title": "Work Experience",
+      "items": ["moxie", "hof-intern", "inGnious", "hof", "iauro", "ntu"],
+      "data": {
+        "moxie": {
+          "id": "moxie",
+          "tab-title": "Moxie People Inc.",
+          "title": "React Native Developer",
+          "date": "Jun 2021 - Now",
+          "location": "Pune, India (Remote)",
+          "content": [
+            "Worked primarily on the iOS & Android Moxie Platform mobile application which was based on the React-Native framework.",
+            "Completed 11 projects during my tenure which included introduction of new features, a complete redesign, and general improvements to the application.",
+            "Gained experience working in an agile environment.",
+            "Collaborated with product, UX, and other engineering teams to improve the application experience."
+          ]
+        },
+        "hof-intern": {
+          "id": "hof-intern",
+          "tab-title": "University of Applied Sciences, Hochschule Hof",
+          "title": "Research Intern & Web Developer",
+          "date": "Jan 2021 - Jun 2021",
+          "location": "Hof,Bavaria,Germany (Remote)",
+          "content": [
+            "Worked on a full-stack e-commerce web application using ReactJS, Fastify and MongoDB.",
+            "Worked on geospatial data storage and visualization.",
+            "Led a team with American and French students in an international hackathon.",
+            "Conducted seminars on Fastify and GeoNode."
+          ]
+        },
+        "inGnious": {
+          "id": "inGnious",
+          "tab-title": "inGnious Pvt. Ltd.",
+          "title": "Unity 3D Developer",
+          "date": "Jun 2020 - Aug 2020",
+          "location": "Pune, India (Remote)",
+          "content": [
+            "Developed an application automating the process of dynamc clothing simulation and avatar customisation in Unity 3D."
+          ]
+        },
+        "hof": {
+          "id": "hof",
+          "tab-title": "University of Applied Sciences, Hochschule Hof",
+          "title": "Semester Exchange Student",
+          "date": "Oct 2019 - Feb 2020",
+          "location": "Hof,Bavaria,Germany",
+          "content": [
+            "Worked on projects in the fields of software engineering, cybersecurity, mobile computing, and database management systems with students from a variety of nationalities like Germans, Japanese, Kazakhs, French, etc."
+          ]
+        },
+        "iauro": {
+          "id": "iauro",
+          "tab-title": "iauro Systems Pvt. Ltd.",
+          "title": "Software Engineer Intern",
+          "date": "Jun 2018 - Aug 2018",
+          "location": "Pune, India",
+          "content": [
+            "Developed a chatbot with an open-source software - BotPress."
+          ]
+        },
+        "ntu": {
+          "id": "ntu",
+          "tab-title": "Nanyang Technological University, Singapore",
+          "title": "Global Intern",
+          "date": "Dec 2017 - Jan 2018",
+          "location": "Singapore",
+          "content": [
+            "Completed Global internship program at Nanyang Technological University, Singapore."
+          ]
+        }
+      }
+    }
+  }
+}
