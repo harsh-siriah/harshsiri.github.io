@@ -1,9 +1,11 @@
-import React, { useMemo, useState } from "react";
-import { Col, Nav, NavLink, Row, Tab, Tabs } from "react-bootstrap";
+import React, { useCallback, useState } from "react";
+import { Col, Nav, Row, Tab } from "react-bootstrap";
 import colors from "../../utils/colors";
 import ExperienceContentTab from "./ExperienceContentTab";
 import experienceData from "../../utils/experience.json";
 import "./Experience.css";
+import { LocalEvent } from "../../services/LocalEvent/LocalEvent";
+import EventTypes from "../../services/LocalEvent/EventTypes";
 
 const ExperienceDataKeys = {
   TabTitle: "tab-title",
@@ -25,7 +27,9 @@ function ExperienceTable(props) {
 
   const [selectedCell, setSelectedCell] = useState(data?.data?.[items[0]]?.id);
 
-  console.log({ selectedCell });
+  const onCellItemSelect = useCallback((key) => {
+    setSelectedCell(key);
+  }, []);
 
   return (
     <div style={styles.container}>
@@ -33,7 +37,18 @@ function ExperienceTable(props) {
         <Tab.Container defaultActiveKey="first">
           <Row>
             <Col sm={3}>
-              <Nav variant="tabs">
+              <Nav
+                variant="tabs"
+                style={styles.navContainer}
+                onMouseEnter={() => {
+                  LocalEvent.emit(EventTypes.ReactScroller.Scroll.Up.Block);
+                  LocalEvent.emit(EventTypes.ReactScroller.Scroll.Down.Block);
+                }}
+                onMouseLeave={() => {
+                  LocalEvent.emit(EventTypes.ReactScroller.Scroll.Up.UnBlock);
+                  LocalEvent.emit(EventTypes.ReactScroller.Scroll.Down.UnBlock);
+                }}
+              >
                 {items.map((item, index) => {
                   const localData = data?.data?.[item];
                   const text = localData?.[ExperienceDataKeys.TabTitle];
@@ -41,7 +56,7 @@ function ExperienceTable(props) {
 
                   const isLastItem = index === items.length - 1;
                   return (
-                    <div style={{ width: "100%" }}>
+                    <div style={styles.navCellItemContainer}>
                       <Nav.Item
                         bsPrefix={
                           key == selectedCell
@@ -54,7 +69,7 @@ function ExperienceTable(props) {
                           eventKey={key}
                           bsPrefix={customNavLink}
                           onClick={() => {
-                            setSelectedCell(key);
+                            onCellItemSelect(key);
                           }}
                         >
                           {text}
@@ -66,8 +81,8 @@ function ExperienceTable(props) {
                 })}
               </Nav>
             </Col>
-            <Col sm={9} style={{ display: "flex" }}>
-              <div style={styles.verticalSeparator} />
+            <Col sm={9} style={styles.contentColumn}>
+              {/* <div style={styles.verticalSeparator} /> */}
               <Tab.Content>
                 {items.map((item) => {
                   const localData = data?.data?.[item];
@@ -132,7 +147,7 @@ const styles = {
   },
   box: {
     // height: "475px",
-
+    height: "300pt",
     width: "70%",
     borderColor: "#B5BEBE",
     borderWidth: "1px",
@@ -147,17 +162,34 @@ const styles = {
     borderWidth: "0.5px",
     borderStyle: "solid",
     marginLeft: "20px",
-    marginTop: "1pt",
-    marginBottom: "1pt",
+    marginTop: "2.5pt",
+    marginBottom: "2.5pt",
   },
 
-  verticalSeparator: {
-    position: "absolute",
-    height: "50%",
-    width: "1px",
-    borderColor: "#B5BEBE",
-    borderWidth: "0.5px",
-    borderStyle: "solid",
-    alignSelf: "center",
+  // verticalSeparator: {
+  //   position: "absolute",
+  //   height: "40%",
+  //   width: "1px",
+  //   borderColor: "#B5BEBE",
+  //   borderWidth: "0.5px",
+  //   borderStyle: "solid",
+  //   alignSelf: "center",
+  // },
+
+  navCellItemContainer: {
+    width: "100%",
+    marginLeft: "5pt",
+    marginRight: "5pt",
   },
+
+  navContainer: {
+    paddingTop: "5pt",
+    paddingBottom: "5pt",
+    overflowY: "scroll",
+    height: "299pt",
+    overflowX: "hidden",
+    borderWidth: "0px",
+  },
+
+  contentColumn: { display: "flex" },
 };

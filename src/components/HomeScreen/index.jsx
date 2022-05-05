@@ -1,6 +1,8 @@
-import React, { useCallback, useMemo, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { Stack } from "react-bootstrap";
 import ReactPageScroller from "react-page-scroller";
+import EventTypes from "../../services/LocalEvent/EventTypes";
+import { LocalEvent } from "../../services/LocalEvent/LocalEvent";
 import colors from "../../utils/colors";
 import About from "../About";
 import Experience from "../Experience";
@@ -10,16 +12,55 @@ import "./HomeScreen.css";
 
 function HomeScreen() {
   const [currentPageNumber, setCurrentPageNumber] = useState(0);
+  const [shouldBlockScrollUp, setShouldBlockScrollUp] = useState(false);
+  const [shouldBlockScrollDown, setShouldBlockScrollDown] = useState(false);
 
   const componentsList = useMemo(
     () => [<Introduction />, <About />, <Experience />],
     []
   );
 
+  useEffect(() => {
+    LocalEvent.on(EventTypes.ReactScroller.Scroll.Up.Block, () => {
+      updateScrollUpPref(true);
+    });
+    LocalEvent.on(EventTypes.ReactScroller.Scroll.Up.UnBlock, () => {
+      updateScrollUpPref(false);
+    });
+    LocalEvent.on(EventTypes.ReactScroller.Scroll.Down.Block, () => {
+      updateScrollDownPref(true);
+    });
+    LocalEvent.on(EventTypes.ReactScroller.Scroll.Down.UnBlock, () => {
+      updateScrollDownPref(false);
+    });
+
+    return () => {
+      LocalEvent.off(EventTypes.ReactScroller.Scroll.Up.Block, () => {
+        updateScrollUpPref(true);
+      });
+      LocalEvent.off(EventTypes.ReactScroller.Scroll.Up.UnBlock, () => {
+        updateScrollUpPref(false);
+      });
+      LocalEvent.off(EventTypes.ReactScroller.Scroll.Down.Block, () => {
+        updateScrollDownPref(true);
+      });
+      LocalEvent.off(EventTypes.ReactScroller.Scroll.Down.UnBlock, () => {
+        updateScrollDownPref(false);
+      });
+    };
+  }, []);
+
+  const updateScrollUpPref = useCallback((pref) => {
+    setShouldBlockScrollUp(pref);
+  });
+  const updateScrollDownPref = useCallback((pref) => {
+    setShouldBlockScrollDown(pref);
+  });
+
   const onPageChange = useCallback(
     (pageNum) => {
       setCurrentPageNumber((currentPageNumber) => {
-        if (pageNum > 0 && pageNum < componentsList.length) {
+        if (pageNum >= 0 && pageNum < componentsList.length) {
           console.log({ pageNum });
           return pageNum;
         }
@@ -73,7 +114,8 @@ function HomeScreen() {
             animationTimer={800}
             pageOnChange={onPageChange}
             customPageNumber={currentPageNumber}
-            // renderAllPagesOnFirstRender={true}
+            blockScrollUp={shouldBlockScrollUp}
+            blockScrollDown={shouldBlockScrollDown}
           >
             {renderPages}
           </ReactPageScroller>

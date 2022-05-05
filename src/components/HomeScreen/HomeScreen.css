@@ -1,0 +1,7 @@
+::-webkit-scrollbar {
+  width: 2pt;
+}
+
+::-webkit-scrollbar-thumb {
+  background: cadetblue;
+}
