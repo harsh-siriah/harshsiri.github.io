@@ -1,7 +1,9 @@
 ::-webkit-scrollbar {
-  width: 2pt;
+  width: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
   background: cadetblue;
+  border: 4px solid transparent;
+  border-radius: 12px;
 }
