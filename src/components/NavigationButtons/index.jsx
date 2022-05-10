@@ -31,7 +31,7 @@ function NavigationButtons(props) {
           }}
           style={styles.paddingStyle}
         >
-          <p>{item}</p>
+          <p style={{ textTransform: "uppercase" }}>{item}</p>
         </TransparentButton>
       );
     });

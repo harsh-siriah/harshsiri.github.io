@@ -8,6 +8,7 @@ import About from "../About";
 import Experience from "../Experience";
 import Introduction from "../Introduction";
 import NavigationButtons from "../NavigationButtons";
+import Projects from "../Projects/screen";
 import "./HomeScreen.css";
 
 function HomeScreen() {
@@ -16,7 +17,7 @@ function HomeScreen() {
   const [shouldBlockScrollDown, setShouldBlockScrollDown] = useState(false);
 
   const componentsList = useMemo(
-    () => [<Introduction />, <About />, <Experience />],
+    () => [<Introduction />, <About />, <Projects />, <Experience />],
     []
   );
 

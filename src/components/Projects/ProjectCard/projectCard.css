@@ -1,0 +1,30 @@
+.container {
+  aspect-ratio: 1;
+  justify-content: center;
+}
+
+p {
+  text-transform: none;
+}
+
+.main_image {
+  width: 60%;
+  height: 60%;
+  align-self: center;
+}
+
+.card_overlay {
+  background-color: #c4c4c4e6;
+  opacity: 0;
+  transition: opacity 200ms ease-out 100ms;
+}
+.card_overlay:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.card_overlay_content {
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+}
