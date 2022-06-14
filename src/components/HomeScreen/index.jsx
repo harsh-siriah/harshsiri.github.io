@@ -17,7 +17,7 @@ function HomeScreen() {
   const [shouldBlockScrollDown, setShouldBlockScrollDown] = useState(false);
 
   const componentsList = useMemo(
-    () => [<Introduction />, <About />, <Projects />, <Experience />],
+    () => [<Introduction />, <Projects />, <Experience />, <About />],
     []
   );
 

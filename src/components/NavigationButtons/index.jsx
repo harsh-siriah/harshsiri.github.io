@@ -5,7 +5,7 @@ import { ReactComponent as CrossLogo } from "../../assets/cross-logo.svg";
 import { Stack } from "react-bootstrap";
 import TransparentButton from "../TransparentButton";
 
-const menuItems = ["About", "Projects", "Experience", "Contact"];
+const menuItems = ["Projects", "Experience", "About", "Contact"];
 function NavigationButtons(props) {
   const { onItemSelect } = props;
 

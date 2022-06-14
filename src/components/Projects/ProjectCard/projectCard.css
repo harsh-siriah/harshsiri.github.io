@@ -1,5 +1,5 @@
 .container {
-  aspect-ratio: 1;
+  aspect-ratio: 1.8;
   justify-content: center;
 }
 
@@ -9,7 +9,7 @@ p {
 
 .main_image {
   width: 60%;
-  height: 60%;
+  aspect-ratio: 1;
   align-self: center;
 }
 
@@ -24,7 +24,16 @@ p {
 }
 
 .card_overlay_content {
-  /* display: flex; */
   align-items: center;
   justify-content: center;
+}
+
+.technologies {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.project-name {
+  text-align: center;
 }

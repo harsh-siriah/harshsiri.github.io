@@ -1,13 +1,13 @@
 import React, { useMemo } from "react";
 import { Card, Col } from "react-bootstrap";
+import { AndroidLogoSvg } from "../../../assets";
 import colors from "../../../utils/colors";
-import { ReactComponent as AndroidLogo } from "../../../assets/android-logo.svg";
 import "./projectCard.css";
 
 const petronusImage = require("../../../assets/petronus_logo.png");
 
 function ProjectCard(props) {
-  const { title = "PETronus", technologies = [AndroidLogo] } = props;
+  const { title = "PETronus", technologies = [AndroidLogoSvg] } = props;
 
   const cardStyle = useMemo(
     () => ({
@@ -23,15 +23,17 @@ function ProjectCard(props) {
     <Card style={cardStyle} className="container">
       <img src={petronusImage} className="main_image" />
       <Card.ImgOverlay className="card_overlay" style={cardStyle}>
-        <Col className="py-auto">
+        <Col className="my-auto">
           <Card.Text>
-            <h2>{title}</h2>
+            <h2 className="project-name">{title}</h2>
           </Card.Text>
-          {technologies && technologies.length > 0
-            ? technologies?.map((Item) => {
-                return <Item fill={colors.cadetBlue} />;
-              })
-            : null}
+          <div className="technologies">
+            {technologies && technologies.length > 0
+              ? technologies?.map((Item) => {
+                  return <Item fill={colors.cadetBlue} />;
+                })
+              : null}
+          </div>
         </Col>
       </Card.ImgOverlay>
     </Card>

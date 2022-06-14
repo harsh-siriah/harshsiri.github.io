@@ -1,7 +1,6 @@
 import { Carousel } from "bootstrap";
 import React, { useMemo } from "react";
 import { CardGroup, CarouselItem, Col, Container, Row } from "react-bootstrap";
-import colors from "../../../utils/colors";
 import ProjectCard from "../ProjectCard";
 import "./projects-screen.css";
 
@@ -22,7 +21,14 @@ function Projects() {
   );
 
   return (
-    <Container style={{ justifyContent: "center" }}>
+    <Container
+      style={{
+        justifyContent: "center",
+        height: "100%",
+        alignItems: "center",
+        display: "flex",
+      }}
+    >
       <h1 className="title ">PROJECTS</h1>
       {cardGrid}
     </Container>
