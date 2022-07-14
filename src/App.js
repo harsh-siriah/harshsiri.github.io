@@ -1,5 +1,6 @@
 import "./App.css";
 import HomeScreen from "./components/HomeScreen";
+import ProjectModal from "./components/Projects/ProjectModal";
 import colors from "./utils/colors";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
   return (
     <div className="App" style={appStyle}>
       <HomeScreen />
+      <ProjectModal />
     </div>
   );
 }

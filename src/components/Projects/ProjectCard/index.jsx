@@ -1,6 +1,8 @@
 import React, { useMemo } from "react";
 import { Card, Col } from "react-bootstrap";
 import { AndroidLogoSvg } from "../../../assets";
+import EventTypes from "../../../services/LocalEvent/EventTypes";
+import { LocalEvent } from "../../../services/LocalEvent/LocalEvent";
 import colors from "../../../utils/colors";
 import "./projectCard.css";
 
@@ -20,7 +22,13 @@ function ProjectCard(props) {
   );
 
   return (
-    <Card style={cardStyle} className="container">
+    <Card
+      style={cardStyle}
+      className="container"
+      onClick={() => {
+        LocalEvent.emit(EventTypes.ProjectModal.Show, "project_id");
+      }}
+    >
       <img src={petronusImage} className="main_image" />
       <Card.ImgOverlay className="card_overlay" style={cardStyle}>
         <Col className="my-auto">
