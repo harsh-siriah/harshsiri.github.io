@@ -2,23 +2,24 @@ import { Carousel } from "bootstrap";
 import React, { useMemo } from "react";
 import { CardGroup, CarouselItem, Col, Container, Row } from "react-bootstrap";
 import ProjectCard from "../ProjectCard";
+import { ProjectDataHelper } from "../ProjectModal/projectDataHelper";
 import "./projects-screen.css";
 
 function Projects() {
-  const cardGrid = useMemo(
-    () => (
+  const cardGrid = useMemo(() => {
+    const projects = ProjectDataHelper.getProjectsArray();
+    return (
       <Container style={{ width: "50%" }}>
         <Row xs={1} md={2} className="g-4">
-          {Array.from({ length: 4 }).map((_, idx) => (
+          {projects.map((projectId, idx) => (
             <Col>
-              <ProjectCard />
+              <ProjectCard projectId={projectId} />
             </Col>
           ))}
         </Row>
       </Container>
-    ),
-    []
-  );
+    );
+  }, []);
 
   return (
     <Container

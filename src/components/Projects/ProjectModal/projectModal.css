@@ -2,14 +2,19 @@
   height: 80vh;
   border-radius: 60px !important;
   background: rgba(252, 252, 252, 0.9);
+  overflow: hidden;
 }
 
 .modal-body-style {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
   flex: 1;
+  overflow: auto;
 }
 
 .project-title {
@@ -40,4 +45,12 @@
 
 .sections {
   margin-top: 30px;
+}
+
+.section {
+}
+
+.section-content {
+  font-size: 1.1em;
+  color: darkslategray;
 }
