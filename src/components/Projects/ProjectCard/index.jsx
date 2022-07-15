@@ -38,7 +38,17 @@ function ProjectCard(props) {
           <div className="technologies">
             {technologies && technologies.length > 0
               ? technologies?.map((Item) => {
-                  return <Item fill={colors.cadetBlue} />;
+                  return (
+                    <Item
+                      style={{
+                        height: "40px",
+                        width: "40px",
+                        marginLeft: "5px",
+                        marginRight: "5px",
+                      }}
+                      fill={colors.cadetBlue}
+                    />
+                  );
                 })
               : null}
           </div>

@@ -4,15 +4,8 @@
     "moxie": {
       "id": "petronus",
       "project-title": "PETronus",
-      "title": "React Native Developer",
-      "date": "Jun 2021 - Now",
-      "location": "Pune, India (Remote)",
-      "content": [
-        "Worked primarily on the iOS & Android Moxie Platform mobile application which was based on the React-Native framework.",
-        "Completed 11 projects during my tenure which included introduction of new features, a complete redesign, and general improvements to the application.",
-        "Gained experience working in an agile environment.",
-        "Collaborated with product, UX, and other engineering teams to improve the application experience."
-      ]
+      "technologies": ["Android", "Firebase"],
+      "content": []
     }
   }
 }
