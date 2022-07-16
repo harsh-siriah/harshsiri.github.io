@@ -21,7 +21,7 @@ const ProjectData = {
     [ProjectNames.Petronus]: {
       id: ProjectNames.Petronus,
       project_title: "PETronus",
-      technologies: [TechnologyNames.Android],
+      technologies: [TechnologyNames.Android, TechnologyNames.Firebase],
       summary: "",
       project_data: [
         {
