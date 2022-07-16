@@ -1,5 +1,7 @@
 import ProjectNames from "../constants/ProjectNames";
 
-export default {
+const projectAssets = {
   [ProjectNames.Petronus]: require("./petronus_logo.png"),
+  [ProjectNames.VrHangouts]: require("./ProjectAssets/VR_Hangouts/VRHangouts.png"),
 };
+export default projectAssets;
