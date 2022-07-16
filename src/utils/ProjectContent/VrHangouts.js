@@ -1,5 +1,8 @@
-const useCaseDiagram = require("../../assets/ProjectAssets/VR_Hangouts/use_case_diagram.png");
-const flowchart = require("../../assets/ProjectAssets/VR_Hangouts/flowchart.png");
+import {
+  useCaseDiagram,
+  flowchart,
+  homescreen,
+} from "../../assets/ProjectAssets/VR_Hangouts";
 
 const centerImageStyle = {
   width: "100%",
@@ -52,14 +55,37 @@ const content = [
     title: "Creating Meetings ",
     content: (
       <div>
-        The users can choose their own nickname, choose room size and choose an
-        environment and instantly create a meeting with a unique code. For
-        joining the meeting, all other participants need to do is choose a
-        nickname and enter the unique code.
-        <span style={{ color: "#43A8A2" }}>
-          The process was intentionally kept simple and it was ensured that
-          least amount of steps need to be taken to get into a meeting.
-        </span>
+        <div>
+          The users can choose their own nickname, choose room size and choose
+          an environment and instantly create a meeting with a unique code. For
+          joining the meeting, all other participants need to do is choose a
+          nickname and enter the unique code.
+          <span style={{ color: "#43A8A2" }}>
+            The process was intentionally kept simple and it was ensured that
+            least amount of steps need to be taken to get into a meeting.
+          </span>
+        </div>
+        <div
+          style={{
+            overflow: "auto",
+            marginTop: "40px",
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
+          <img
+            src={homescreen}
+            style={{ float: "left", paddingRight: "20px" }}
+            width="600"
+            alt="Homescreen"
+          />
+          <div>
+            <span style={{ color: "#43A8A2" }}>Usernames</span>
+            <br />
+            For every meeting users can set their own nickname that will be
+            visible over their avatars in the meeting room.
+          </div>
+        </div>
       </div>
     ),
   },

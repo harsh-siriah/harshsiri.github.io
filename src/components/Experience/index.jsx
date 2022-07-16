@@ -147,7 +147,7 @@ const styles = {
   },
   box: {
     // height: "475px",
-    height: "300pt",
+    height: "70vh",
     width: "70%",
     borderColor: "#B5BEBE",
     borderWidth: "1px",
@@ -166,27 +166,20 @@ const styles = {
     marginBottom: "2.5pt",
   },
 
-  // verticalSeparator: {
-  //   position: "absolute",
-  //   height: "40%",
-  //   width: "1px",
-  //   borderColor: "#B5BEBE",
-  //   borderWidth: "0.5px",
-  //   borderStyle: "solid",
-  //   alignSelf: "center",
-  // },
-
   navCellItemContainer: {
     width: "100%",
     marginLeft: "5pt",
     marginRight: "5pt",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-evenly",
   },
 
   navContainer: {
     paddingTop: "5pt",
     paddingBottom: "5pt",
     overflowY: "scroll",
-    height: "299pt",
+    height: "70vh",
     overflowX: "hidden",
     borderWidth: "0px",
   },

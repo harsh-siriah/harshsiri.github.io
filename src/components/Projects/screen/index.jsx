@@ -17,7 +17,7 @@ function Projects() {
   const renderCarousalImage = useCallback(
     (image) => (
       <span>
-        <img src={image} />
+        <img src={image} alt="Direction Button" />
       </span>
     ),
     []
