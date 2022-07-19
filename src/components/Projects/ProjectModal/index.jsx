@@ -43,7 +43,7 @@ function ProjectModal() {
       fullscreen="sm-down"
       show={showModal}
       onHide={hideModal}
-      dialogClassName="modal-90w"
+      dialogClassName="modal-100w"
       size="xl"
     >
       {currentProjectData && showModal ? (
