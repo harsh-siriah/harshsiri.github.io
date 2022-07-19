@@ -49,8 +49,8 @@ function ProjectCard(props) {
                   return (
                     <Technology
                       style={{
-                        height: "40px",
-                        width: "40px",
+                        height: "20%",
+                        width: "20%",
                         marginLeft: "5px",
                         marginRight: "5px",
                       }}

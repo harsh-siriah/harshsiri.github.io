@@ -193,7 +193,13 @@ const content = [
           </div>
         </div>
 
-        <div style={{ marginTop: "25px" }}>
+        <div
+          style={{
+            marginTop: "25px",
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
           <span
             style={{
               color: "#43A8A2",
