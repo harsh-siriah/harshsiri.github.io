@@ -10,20 +10,26 @@ function ContactPage() {
           <form
             action="https://formsubmit.co/harshsiriah1@email.com"
             method="POST"
+            className="form-container"
           >
-            <Col>
+            <div className="form-item">
               <label className="form-label">Email address</label>
-              <input className="form-input" type="email" />
-            </Col>
-            <Col>
+              <input className="form-input" type="email" required />
+            </div>
+            <div className="form-item">
               <label className="form-label">Name</label>
-              <input className="form-input" type="text" />
-            </Col>
+              <input className="form-input" type="text" required />
+            </div>
+            <div className="form-item">
+              <label className="form-label">Message</label>
+              <textarea
+                className="form-input form-input-message"
+                type="text"
+                required
+              ></textarea>
+            </div>
+            <input type="submit" className="form-submit-button" />
           </form>
-
-          <Button variant="primary" type="submit">
-            Submit
-          </Button>
         </Col>
       </Row>
     </div>
