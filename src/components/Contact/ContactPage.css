@@ -1,8 +1,21 @@
-.container {
+.page {
   display: flex;
-  flex: 1;
+  height: 100%;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.container {
+  margin-left: 130px;
+  margin-right: 130px;
+  padding-top: 50px;
+}
+
+.social-icons-container {
+  display: flex;
+  width: 20vw;
+  justify-content: space-evenly;
 }
 
 .vertical-flex {
@@ -13,7 +26,7 @@
   padding: 20px;
   border: 1px solid #b5bebe;
   border-radius: 20px;
-  width: 20vw;
+  width: 30vw;
 }
 
 .form-item {
@@ -55,19 +68,7 @@
   text-transform: uppercase;
 }
 
-.linkedin-icon {
-  height: 55px;
-  width: 55px;
+.social-icons {
+  height: 90%;
   aspect-ratio: 1;
-}
-.github-icon {
-  height: 40px;
-  width: 40px;
-  aspect-ratio: 1;
-}
-.cv-icon {
-  height: 40px;
-  width: 40px;
-  aspect-ratio: 1;
-  background-color: #43a8a2;
 }

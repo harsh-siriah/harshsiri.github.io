@@ -7,12 +7,16 @@ import "./introduction.css";
 function Introduction(props) {
   return (
     <Stack style={styles.container}>
-      <h3 style={styles.h3Text}>{copyTexts.hiMyNameIs}</h3>
-      <h1 style={styles.h1Text}>{copyTexts.name}</h1>
+      <h3 style={styles.h3Text} className="intro-text">
+        {copyTexts.hiMyNameIs}
+      </h3>
+      <h1 style={styles.h1Text} className="intro-text">
+        {copyTexts.name}
+      </h1>
       <Stack direction="horizontal" gap={1}>
-        <Bubble text={copyTexts.bubble1} />
-        <Bubble text={copyTexts.bubble2} />
-        <Bubble text={copyTexts.bubble3} />
+        <Bubble text={copyTexts.bubble1} className="intro-cells" />
+        <Bubble text={copyTexts.bubble2} className="intro-cells" />
+        <Bubble text={copyTexts.bubble3} className="intro-cells" />
       </Stack>
     </Stack>
   );

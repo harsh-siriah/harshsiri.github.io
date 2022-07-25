@@ -3,16 +3,14 @@ import { Col, Image, Row } from "react-bootstrap";
 import colors from "../../utils/colors";
 import copyTexts from "../../utils/copyTexts";
 import "./ContactPage.css";
-import { ReactComponent as LinkedInLogo } from "../../assets/linkedin-logo.svg";
-import { ReactComponent as GithubLogo } from "../../assets/github-logo.svg";
 import { Links } from "../../utils/links";
-import { cvIcon } from "../../assets";
+import { GithubLogoSvg, LinkedInLogoSvg, CvIconSvg } from "../../assets";
 
 const profImage = require("../../assets/Prof_Image.png");
 
 function ContactPage() {
   return (
-    <div className="container vertical-flex">
+    <div className="page">
       <h1 style={styles.heading}>Contact me</h1>
       <Row className="container">
         <Col>
@@ -53,20 +51,21 @@ function ContactPage() {
             style={styles.profImage}
           />
           <div style={styles.separator} />
-          <p className="fs-6" style={styles.aboutText}>
-            {copyTexts.aboutText}
-          </p>
-          <Row style={styles.container}>
-            <a href={Links.LinkedIn} target="_blank" className="linkedin-icon">
-              <LinkedInLogo fill={colors.cadetBlue} />
+          <p style={styles.aboutText}>{copyTexts.aboutText}</p>
+          <div className="social-icons-container">
+            <a href={Links.LinkedIn} target="_blank">
+              <LinkedInLogoSvg
+                fill={colors.cadetBlue}
+                className="social-icons"
+              />
             </a>
-            <a href={Links.Github} target="_blank" className="github-icon">
-              <GithubLogo fill={colors.cadetBlue} />
+            <a href={Links.Github} target="_blank">
+              <GithubLogoSvg fill={colors.cadetBlue} className="social-icons" />
             </a>
-            <a href={Links.Github} target="_blank" className="github-icon">
-              <Image src={cvIcon} className="cv-icon" />
+            <a href={Links.Resume} target="_blank">
+              <CvIconSvg fill={colors.cadetBlue} className="social-icons" />
             </a>
-          </Row>
+          </div>
         </Col>
       </Row>
     </div>
@@ -89,9 +88,10 @@ const styles = {
     width: "100%",
     textAlign: "center",
     textTransform: "uppercase",
+    marginTop: "10vh",
   },
   profImage: {
-    height: "280px",
+    height: "30%",
   },
   separator: {
     width: "20vw",
@@ -102,7 +102,7 @@ const styles = {
     marginBottom: "20px",
   },
   aboutText: {
-    fontSize: "15px",
+    fontSize: "0.8em",
     color: colors.textColor,
     textAlign: "center",
   },
