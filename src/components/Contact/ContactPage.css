@@ -5,6 +5,10 @@
   align-items: center;
 }
 
+.vertical-flex {
+  flex-direction: column;
+}
+
 .form-container {
   padding: 20px;
   border: 1px solid #b5bebe;
@@ -49,4 +53,21 @@
   height: 5vh;
   font-size: larger;
   text-transform: uppercase;
+}
+
+.linkedin-icon {
+  height: 55px;
+  width: 55px;
+  aspect-ratio: 1;
+}
+.github-icon {
+  height: 40px;
+  width: 40px;
+  aspect-ratio: 1;
+}
+.cv-icon {
+  height: 40px;
+  width: 40px;
+  aspect-ratio: 1;
+  background-color: #43a8a2;
 }
