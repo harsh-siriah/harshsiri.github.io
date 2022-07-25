@@ -1,23 +1,19 @@
 import React from "react";
-import { Col, Image, Stack } from "react-bootstrap";
+import { Stack } from "react-bootstrap";
 import colors from "../../utils/colors";
+import { education } from "../../assets";
 
 function About() {
   return (
     <Stack gap={5} style={styles.container}>
       <h1 style={styles.heading}>ABOUT ME</h1>
-      <Col
-        style={{
-          display: "flex",
-          alignItems: "center",
-          flexDirection: "column",
-        }}
-      ></Col>
+
+      <img src={education} style={styles.education} alt="Education" />
     </Stack>
   );
 }
 
-export default About;
+export default React.memo(About);
 
 const styles = {
   container: {
@@ -33,17 +29,7 @@ const styles = {
     width: "100%",
     textAlign: "center",
   },
-  profImage: {
-    height: "333px",
-  },
-  separator: {
-    width: "80vw",
-    height: "4px",
-    backgroundColor: "#C4C4C4BF",
-    borderRadius: "10px",
-  },
-  aboutText: {
-    fontSize: "21px",
-    color: colors.textColor,
+  education: {
+    width: "30%",
   },
 };
