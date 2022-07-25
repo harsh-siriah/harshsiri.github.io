@@ -11,4 +11,7 @@ export default {
       },
     },
   },
+  ProjectModal: {
+    Show: "event_type_project_modal_show",
+  },
 };

@@ -5,6 +5,7 @@ import EventTypes from "../../services/LocalEvent/EventTypes";
 import { LocalEvent } from "../../services/LocalEvent/LocalEvent";
 import colors from "../../utils/colors";
 import About from "../About";
+import ContactPage from "../Contact";
 import Experience from "../Experience";
 import Introduction from "../Introduction";
 import NavigationButtons from "../NavigationButtons";
@@ -17,7 +18,13 @@ function HomeScreen() {
   const [shouldBlockScrollDown, setShouldBlockScrollDown] = useState(false);
 
   const componentsList = useMemo(
-    () => [<Introduction />, <Projects />, <Experience />, <About />],
+    () => [
+      <Introduction />,
+      <Projects />,
+      <Experience />,
+      <About />,
+      <ContactPage />,
+    ],
     []
   );
 
@@ -53,10 +60,10 @@ function HomeScreen() {
 
   const updateScrollUpPref = useCallback((pref) => {
     setShouldBlockScrollUp(pref);
-  });
+  }, []);
   const updateScrollDownPref = useCallback((pref) => {
     setShouldBlockScrollDown(pref);
-  });
+  }, []);
 
   const onPageChange = useCallback(
     (pageNum) => {

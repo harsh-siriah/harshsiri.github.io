@@ -5,3 +5,4 @@ import { ReactComponent as LinkedInLogo } from "./linkedin-logo.svg";
 export const AndroidLogoSvg = AndroidLogo;
 export const GithubLogoSvg = GithubLogo;
 export const LinkedInLogoSvg = LinkedInLogo;
+export const cvIcon = require("./cv.png");

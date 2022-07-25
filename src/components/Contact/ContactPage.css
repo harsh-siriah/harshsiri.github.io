@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.vertical-flex {
+  flex-direction: column;
+}
+
+.form-container {
+  padding: 20px;
+  border: 1px solid #b5bebe;
+  border-radius: 20px;
+  width: 20vw;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.form-input {
+  border: 1px solid #b5bebe;
+  border-radius: 5px;
+  background-color: transparent;
+  outline-color: aliceblue;
+  color: aliceblue;
+  padding: 5px;
+}
+
+.form-input-message {
+  height: 20vh;
+}
+
+.form-submit-button {
+  background: #43a8a2;
+  border-radius: 20px;
+  width: 100%;
+  border: 0px;
+  color: aliceblue;
+  height: 5vh;
+  font-size: larger;
+  text-transform: uppercase;
+}
+
+.linkedin-icon {
+  height: 55px;
+  width: 55px;
+  aspect-ratio: 1;
+}
+.github-icon {
+  height: 40px;
+  width: 40px;
+  aspect-ratio: 1;
+}
+.cv-icon {
+  height: 40px;
+  width: 40px;
+  aspect-ratio: 1;
+  background-color: #43a8a2;
+}

@@ -1,0 +1,109 @@
+import React from "react";
+import { Col, Image, Row } from "react-bootstrap";
+import colors from "../../utils/colors";
+import copyTexts from "../../utils/copyTexts";
+import "./ContactPage.css";
+import { ReactComponent as LinkedInLogo } from "../../assets/linkedin-logo.svg";
+import { ReactComponent as GithubLogo } from "../../assets/github-logo.svg";
+import { Links } from "../../utils/links";
+import { cvIcon } from "../../assets";
+
+const profImage = require("../../assets/Prof_Image.png");
+
+function ContactPage() {
+  return (
+    <div className="container vertical-flex">
+      <h1 style={styles.heading}>Contact me</h1>
+      <Row className="container">
+        <Col>
+          <form
+            action="https://formsubmit.co/bb830a004611bb6c6974afe9e13439f8"
+            method="POST"
+            className="form-container"
+          >
+            <div className="form-item">
+              <label className="form-label">Email address</label>
+              <input className="form-input" type="email" required />
+            </div>
+            <div className="form-item">
+              <label className="form-label">Name</label>
+              <input className="form-input" type="text" required />
+            </div>
+            <div className="form-item">
+              <label className="form-label">Message</label>
+              <textarea
+                className="form-input form-input-message"
+                type="text"
+                required
+              ></textarea>
+            </div>
+            <input type="submit" className="form-submit-button" />
+          </form>
+        </Col>
+        <Col
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
+          <Image
+            roundedCircle={true}
+            src={profImage}
+            style={styles.profImage}
+          />
+          <div style={styles.separator} />
+          <p className="fs-6" style={styles.aboutText}>
+            {copyTexts.aboutText}
+          </p>
+          <Row style={styles.container}>
+            <a href={Links.LinkedIn} target="_blank" className="linkedin-icon">
+              <LinkedInLogo fill={colors.cadetBlue} />
+            </a>
+            <a href={Links.Github} target="_blank" className="github-icon">
+              <GithubLogo fill={colors.cadetBlue} />
+            </a>
+            <a href={Links.Github} target="_blank" className="github-icon">
+              <Image src={cvIcon} className="cv-icon" />
+            </a>
+          </Row>
+        </Col>
+      </Row>
+    </div>
+  );
+}
+
+export default React.memo(ContactPage);
+
+const styles = {
+  container: {
+    justifyContent: "center",
+    display: "flex",
+    height: "100%",
+    marginLeft: "130px",
+    marginRight: "130px",
+  },
+  heading: {
+    fontSize: "48px",
+    color: colors.cadetBlue,
+    width: "100%",
+    textAlign: "center",
+    textTransform: "uppercase",
+  },
+  profImage: {
+    height: "280px",
+  },
+  separator: {
+    width: "20vw",
+    height: "4px",
+    backgroundColor: "#C4C4C4BF",
+    borderRadius: "10px",
+    marginTop: "20px",
+    marginBottom: "20px",
+  },
+  aboutText: {
+    fontSize: "15px",
+    color: colors.textColor,
+    textAlign: "center",
+  },
+};

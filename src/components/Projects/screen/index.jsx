@@ -1,24 +1,57 @@
-import { Carousel } from "bootstrap";
 import React, { useMemo } from "react";
-import { CardGroup, CarouselItem, Col, Container, Row } from "react-bootstrap";
+import {
+  Carousel,
+  CardGroup,
+  CarouselItem,
+  Col,
+  Container,
+  Row,
+} from "react-bootstrap";
 import ProjectCard from "../ProjectCard";
+import { ProjectDataHelper } from "../ProjectModal/projectDataHelper";
 import "./projects-screen.css";
+import { leftArrow, rightArrow } from "../../../assets/arrow_icons";
+import { useCallback } from "react";
 
 function Projects() {
-  const cardGrid = useMemo(
-    () => (
-      <Container style={{ width: "50%" }}>
-        <Row xs={1} md={2} className="g-4">
-          {Array.from({ length: 4 }).map((_, idx) => (
-            <Col>
-              <ProjectCard />
-            </Col>
-          ))}
-        </Row>
-      </Container>
+  const renderCarousalImage = useCallback(
+    (image) => (
+      <span>
+        <img src={image} alt="Direction Button" />
+      </span>
     ),
     []
   );
+
+  const cardGrid = useMemo(() => {
+    const projects = ProjectDataHelper.getProjectsArray();
+    const numProjects = projects.length;
+    const numPages = Math.ceil(numProjects / 4);
+
+    return (
+      <Carousel
+        prevIcon={renderCarousalImage(leftArrow)}
+        nextIcon={renderCarousalImage(rightArrow)}
+        fade={true}
+      >
+        {[...Array(numPages)].map(() => {
+          return (
+            <CarouselItem>
+              <Container style={{ width: "50%" }}>
+                <Row xs={1} md={2} className="g-4">
+                  {projects.map((projectId, idx) => (
+                    <Col>
+                      <ProjectCard projectId={projectId} />
+                    </Col>
+                  ))}
+                </Row>
+              </Container>
+            </CarouselItem>
+          );
+        })}
+      </Carousel>
+    );
+  }, []);
 
   return (
     <Container

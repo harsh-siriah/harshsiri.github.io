@@ -1,13 +1,18 @@
-import React, { useMemo } from "react";
+import React, { useCallback, useMemo } from "react";
 import { Card, Col } from "react-bootstrap";
-import { AndroidLogoSvg } from "../../../assets";
-import colors from "../../../utils/colors";
+import projectAssets from "../../../assets/projectAssets";
+import EventTypes from "../../../services/LocalEvent/EventTypes";
+import { LocalEvent } from "../../../services/LocalEvent/LocalEvent";
+import technologyAssets from "../../../assets/technologyAssets";
+import {
+  ProjectDataHelper,
+  ProjectModalDataKeys,
+} from "../ProjectModal/projectDataHelper";
 import "./projectCard.css";
-
-const petronusImage = require("../../../assets/petronus_logo.png");
+import colors from "../../../utils/colors";
 
 function ProjectCard(props) {
-  const { title = "PETronus", technologies = [AndroidLogoSvg] } = props;
+  const { projectId } = props;
 
   const cardStyle = useMemo(
     () => ({
@@ -19,9 +24,19 @@ function ProjectCard(props) {
     []
   );
 
+  const projectData = ProjectDataHelper.getProjectCardsData(projectId);
+
+  const title = projectData?.[ProjectModalDataKeys.title];
+  const technologies = projectData?.[ProjectModalDataKeys.technologies];
+  const projectImage = projectAssets[projectId];
+
+  const onCardClick = useCallback(() => {
+    LocalEvent.emit(EventTypes.ProjectModal.Show, projectId);
+  }, [projectId]);
+
   return (
-    <Card style={cardStyle} className="container">
-      <img src={petronusImage} className="main_image" />
+    <Card style={cardStyle} className="container" onClick={onCardClick}>
+      <img src={projectImage} className="main_image" />
       <Card.ImgOverlay className="card_overlay" style={cardStyle}>
         <Col className="my-auto">
           <Card.Text>
@@ -29,8 +44,19 @@ function ProjectCard(props) {
           </Card.Text>
           <div className="technologies">
             {technologies && technologies.length > 0
-              ? technologies?.map((Item) => {
-                  return <Item fill={colors.cadetBlue} />;
+              ? technologies.map((item) => {
+                  const Technology = technologyAssets[item];
+                  return (
+                    <Technology
+                      style={{
+                        height: "20%",
+                        width: "20%",
+                        marginLeft: "5px",
+                        marginRight: "5px",
+                      }}
+                      fill={colors.cadetBlue}
+                    />
+                  );
                 })
               : null}
           </div>

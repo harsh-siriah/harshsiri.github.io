@@ -1,0 +1,57 @@
+.modal-content {
+  height: 80vh;
+  border-radius: 60px !important;
+  background: rgba(252, 252, 252, 0.9);
+  overflow: hidden;
+}
+
+.modal-body-style {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  flex: 1;
+  overflow: auto;
+}
+
+.project-title {
+  color: #43a8a2;
+}
+.section-title {
+  color: #43a8a2;
+  font-size: 2em;
+}
+
+.technologies {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.modal-content-text {
+  margin-top: 50px;
+  align-self: flex-start;
+}
+
+.summary {
+}
+
+.summary-text {
+  font-size: 1.1em;
+  color: darkslategray;
+}
+
+.sections {
+  margin-top: 30px;
+}
+
+.section {
+}
+
+.section-content {
+  font-size: 1.1em;
+  color: darkslategray;
+}
