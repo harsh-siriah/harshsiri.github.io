@@ -2,6 +2,7 @@ import "./App.css";
 import HomeScreen from "./components/HomeScreen";
 import ProjectModal from "./components/Projects/ProjectModal";
 import colors from "./utils/colors";
+import "./jQueryLoader";
 
 function App() {
   const appStyle = {

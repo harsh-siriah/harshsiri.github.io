@@ -102,7 +102,7 @@ const styles = {
     marginBottom: "20px",
   },
   aboutText: {
-    fontSize: "1rem",
+    fontSize: "0.8rem",
     color: colors.textColor,
     textAlign: "center",
   },

@@ -5,11 +5,11 @@ import { education } from "../../assets";
 
 function About() {
   return (
-    <Stack gap={5} style={styles.container}>
+    <div style={styles.container}>
       <h1 style={styles.heading}>ABOUT ME</h1>
 
       <img src={education} style={styles.education} alt="Education" />
-    </Stack>
+    </div>
   );
 }
 
@@ -17,8 +17,8 @@ export default React.memo(About);
 
 const styles = {
   container: {
-    justifyContent: "center",
     display: "flex",
+    flexDirection: "column",
     height: "100%",
     marginLeft: "130px",
     marginRight: "130px",
@@ -31,5 +31,6 @@ const styles = {
   },
   education: {
     width: "30%",
+    marginTop: "10vh",
   },
 };
