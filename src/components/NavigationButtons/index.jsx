@@ -3,7 +3,7 @@ import "./NavigationButtons.css";
 import { ReactComponent as ListLogo } from "../../assets/list-logo.svg";
 import { ReactComponent as CrossLogo } from "../../assets/cross-logo.svg";
 import { Stack } from "react-bootstrap";
-import TransparentButton from "../TransparentButton";
+import TransparentButton from "../TransparentButton/TransparentButton";
 
 const menuItems = ["Projects", "Experience", "About", "Contact"];
 function NavigationButtons(props) {

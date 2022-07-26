@@ -4,5 +4,6 @@ const TechnologyNames = {
   Github: "github",
   Linkedin: "linkedin",
   Unity: "unity",
+  ReactNative: "react_native",
 };
 export default TechnologyNames;

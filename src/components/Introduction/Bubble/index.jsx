@@ -3,7 +3,7 @@ import colors from "../../../utils/colors";
 import "./bubble.css";
 
 function Bubble(props) {
-  const { text = "Hi" } = props;
+  const { text = "Hi", className = "" } = props;
 
   const containerStyle = {
     backgroundColor: colors.bubbleBgColor,
@@ -14,7 +14,7 @@ function Bubble(props) {
   };
 
   return (
-    <div className="bubble" style={containerStyle}>
+    <div className={`bubble ${className}`} style={containerStyle}>
       <h5 style={textStyle}>{text}</h5>
     </div>
   );

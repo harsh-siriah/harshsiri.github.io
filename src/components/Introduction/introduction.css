@@ -14,10 +14,42 @@ h3 {
   color: white;
 }
 
+.intro-text {
+  animation-name: fadeInDown;
+  animation-duration: 3s;
+}
+
+.intro-cells {
+  animation-name: fadeInRight;
+  animation-duration: 3s;
+}
+
 .bubbles {
   display: flex;
   flex-direction: row;
   @media (max-width: 720px) {
     flex-direction: column;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10vw);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

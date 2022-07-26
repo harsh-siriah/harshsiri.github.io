@@ -90,7 +90,7 @@ function ExperienceTable(props) {
                   const key = localData?.[ExperienceDataKeys.id];
 
                   return (
-                    <Tab.Pane active={key == selectedCell} eventKey={key}>
+                    <Tab.Pane active={key === selectedCell} eventKey={key}>
                       <ExperienceContentTab
                         title={localData?.[ExperienceDataKeys.title]}
                         date={localData?.[ExperienceDataKeys.date]}
