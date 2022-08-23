@@ -16,3 +16,17 @@
 .elements {
   position: absolute;
 }
+
+.hs-logo {
+  width: 4vw;
+  height: 5vh;
+}
+.hs-logo-container {
+  position: absolute;
+  top: 3vh;
+  left: 3vh;
+  z-index: 11;
+}
+.hs-logo-container :hover {
+  cursor: pointer;
+}

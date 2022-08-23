@@ -10,7 +10,7 @@ const profImage = require("../../assets/Prof_Image.png");
 
 function ContactPage() {
   return (
-    <div className="page">
+    <div className="page" key="ContactPage">
       <h1 style={styles.heading}>Contact me</h1>
       <Row className="container">
         <Col>

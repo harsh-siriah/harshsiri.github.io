@@ -61,6 +61,7 @@ function Projects() {
         alignItems: "center",
         display: "flex",
       }}
+      key="Projects"
     >
       <h1 className="title ">PROJECTS</h1>
       {cardGrid}

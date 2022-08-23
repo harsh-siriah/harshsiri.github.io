@@ -1,6 +1,13 @@
-import React, { useCallback, useEffect, useMemo, useState } from "react";
+import React, {
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import { Stack } from "react-bootstrap";
 import ReactPageScroller from "react-page-scroller";
+import { hsLogo } from "../../assets";
 import EventTypes from "../../services/LocalEvent/EventTypes";
 import { LocalEvent } from "../../services/LocalEvent/LocalEvent";
 import colors from "../../utils/colors";
@@ -13,7 +20,10 @@ import Projects from "../Projects/screen";
 import "./HomeScreen.css";
 
 function HomeScreen() {
-  const [currentPageNumber, setCurrentPageNumber] = useState(0);
+  const currentPageNumberRef = useRef(0);
+  const [currentPageNumber, setCurrentPageNumber] = useState(
+    currentPageNumberRef.current
+  );
   const [shouldBlockScrollUp, setShouldBlockScrollUp] = useState(false);
   const [shouldBlockScrollDown, setShouldBlockScrollDown] = useState(false);
 
@@ -67,21 +77,19 @@ function HomeScreen() {
 
   const onPageChange = useCallback(
     (pageNum) => {
-      setCurrentPageNumber((currentPageNumber) => {
-        if (pageNum >= 0 && pageNum < componentsList.length) {
-          console.log({ pageNum });
-          return pageNum;
-        }
-        return currentPageNumber;
-      });
+      if (pageNum >= 0 && pageNum < componentsList.length) {
+        currentPageNumberRef.current = pageNum;
+        setCurrentPageNumber(currentPageNumberRef.current);
+      }
     },
     [componentsList.length]
   );
 
   const onCustomPageNumberSelect = useCallback(
     (pageNum) => {
-      if (currentPageNumber !== pageNum) {
-        setCurrentPageNumber(pageNum);
+      if (currentPageNumberRef.current !== pageNum) {
+        currentPageNumberRef.current = pageNum;
+        setCurrentPageNumber(currentPageNumberRef.current);
       }
     },
     [currentPageNumber]
@@ -95,7 +103,7 @@ function HomeScreen() {
             ...styles.navigationDots,
             ...{
               backgroundColor:
-                currentPageNumber == index
+                currentPageNumberRef.current == index
                   ? colors.activePageDot
                   : colors.inActivePageDot,
             },
@@ -113,8 +121,20 @@ function HomeScreen() {
 
   return (
     <div>
+      <div className="hs-logo-container">
+        <img
+          className="hs-logo"
+          src={hsLogo}
+          onClick={() => {
+            onCustomPageNumberSelect(0);
+          }}
+        />
+      </div>
       <div style={styles.navigationButtonsContainer}>
-        <NavigationButtons onItemSelect={onCustomPageNumberSelect} />
+        <NavigationButtons
+          onItemSelect={onCustomPageNumberSelect}
+          currentSelectedPage={currentPageNumber}
+        />
       </div>
       <Stack direction="horizontal" gap={1}>
         <div style={styles.scrollView}>

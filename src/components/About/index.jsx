@@ -1,11 +1,10 @@
 import React from "react";
-import { Stack } from "react-bootstrap";
 import colors from "../../utils/colors";
 import { education } from "../../assets";
 
 function About() {
   return (
-    <div style={styles.container}>
+    <div style={styles.container} key="About">
       <h1 style={styles.heading}>ABOUT ME</h1>
 
       <img src={education} style={styles.education} alt="Education" />

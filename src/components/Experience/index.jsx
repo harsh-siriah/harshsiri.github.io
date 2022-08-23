@@ -117,10 +117,10 @@ function Experience() {
     <div style={styles.screen}>
       <h1 style={styles.heading}>WORK EXPERIENCE</h1>
       <div style={styles.container}>
-        {categories.map((category) => {
+        {categories.map((category, index) => {
           const localData = data[category];
 
-          return <ExperienceTable data={localData} />;
+          return <ExperienceTable data={localData} key={index} />;
         })}
       </div>
     </div>

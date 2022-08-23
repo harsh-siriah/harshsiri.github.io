@@ -6,7 +6,7 @@ import "./introduction.css";
 
 function Introduction(props) {
   return (
-    <Stack style={styles.container}>
+    <Stack style={styles.container} key="Introduction">
       <h3 style={styles.h3Text} className="intro-text">
         {copyTexts.hiMyNameIs}
       </h3>
