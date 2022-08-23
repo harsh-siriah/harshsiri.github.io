@@ -1,0 +1,69 @@
+.education-box {
+  height: 55vh;
+  width: 25vw;
+  border: 1px #b5bebe solid;
+  border-radius: 20px;
+}
+.year-cell-container {
+  display: flex;
+  width: 25vw;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+  margin-top: 3.5%;
+  padding-bottom: 3.5%;
+  margin-left: 20px;
+}
+.year-cell-dotted-border {
+  height: 35vh;
+  margin-top: 3.5%;
+  margin-left: 40px;
+  z-index: -1;
+  position: absolute;
+  border: 1px #c4c4c4 dashed;
+}
+.year-cell {
+  width: 40px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: cadetblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  padding-top: 15px;
+}
+.year-cell-text {
+  color: white;
+  font-size: 0.65em;
+}
+.year-cell-content {
+  flex-direction: row;
+  display: flex;
+}
+.year-content-container {
+  flex-direction: column;
+  display: flex;
+}
+.institute-name-text {
+  color: #e7e7e7;
+  font-size: 1em;
+  line-height: 1.2em;
+  margin-bottom: 2px;
+}
+
+.institute-name-text:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.degree-text {
+  color: cadetblue;
+  font-size: 0.75em;
+  line-height: 0.75em;
+}
+.content-text {
+  color: white;
+  font-size: 0.8em;
+  line-height: 0.2em;
+}
