@@ -1,3 +1,8 @@
+.content {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
 .education-box {
   height: 55vh;
   width: 25vw;

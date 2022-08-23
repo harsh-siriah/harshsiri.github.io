@@ -9,7 +9,7 @@ import {
 } from "react-bootstrap";
 import ProjectCard from "../ProjectCard";
 import { ProjectDataHelper } from "../ProjectModal/projectDataHelper";
-import "./projects-screen.css";
+import "./projectScreen.css";
 import { leftArrow, rightArrow } from "../../../assets/arrow_icons";
 import { useCallback } from "react";
 
@@ -51,7 +51,7 @@ function Projects() {
         })}
       </Carousel>
     );
-  }, []);
+  }, [renderCarousalImage]);
 
   return (
     <Container
