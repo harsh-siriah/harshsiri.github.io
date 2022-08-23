@@ -4,10 +4,13 @@ import { ReactComponent as ListLogo } from "../../assets/list-logo.svg";
 import { ReactComponent as CrossLogo } from "../../assets/cross-logo.svg";
 import { Stack } from "react-bootstrap";
 import TransparentButton from "../TransparentButton/TransparentButton";
+import { useRef } from "react";
 
 const menuItems = ["Projects", "Experience", "About", "Contact"];
 function NavigationButtons(props) {
   const { onItemSelect } = props;
+
+  const prevSelectedItem = useRef(0);
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -17,13 +20,28 @@ function NavigationButtons(props) {
 
   const _onItemSelect = useCallback(
     (pageNumber) => {
-      onItemSelect?.(pageNumber);
+      if (prevSelectedItem.current !== pageNumber) {
+        prevSelectedItem.current = pageNumber;
+        onItemSelect?.(pageNumber);
+        onButtonPress();
+      }
     },
     [onItemSelect]
   );
 
   const renderMenuItems = useMemo(() => {
     return menuItems.map((item, index) => {
+      const shouldUnderline = prevSelectedItem.current === index + 1;
+
+      const textOptions = {
+        textTransform: "uppercase",
+      };
+
+      if (shouldUnderline) {
+        textOptions.textDecoration = "underline";
+        textOptions.textDecorationThickness = "2px";
+      }
+
       return (
         <TransparentButton
           onClick={() => {
@@ -31,7 +49,7 @@ function NavigationButtons(props) {
           }}
           style={styles.paddingStyle}
         >
-          <p style={{ textTransform: "uppercase" }}>{item}</p>
+          <p style={textOptions}>{item}</p>
         </TransparentButton>
       );
     });
