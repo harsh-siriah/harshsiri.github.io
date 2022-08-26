@@ -6,6 +6,7 @@ import experienceData from "../../utils/experience.json";
 import "./Experience.css";
 import { LocalEvent } from "../../services/LocalEvent/LocalEvent";
 import EventTypes from "../../services/LocalEvent/EventTypes";
+import { useListScrollHandler } from "../../hooks/useListScrollHandler";
 
 const ExperienceDataKeys = {
   TabTitle: "tab-title",
@@ -31,6 +32,8 @@ function ExperienceTable(props) {
     setSelectedCell(key);
   }, []);
 
+  const { onMouseEnter, onMouseLeave } = useListScrollHandler();
+
   return (
     <div style={styles.container}>
       <div style={styles.box}>
@@ -40,14 +43,8 @@ function ExperienceTable(props) {
               <Nav
                 variant="tabs"
                 style={styles.navContainer}
-                onMouseEnter={() => {
-                  LocalEvent.emit(EventTypes.ReactScroller.Scroll.Up.Block);
-                  LocalEvent.emit(EventTypes.ReactScroller.Scroll.Down.Block);
-                }}
-                onMouseLeave={() => {
-                  LocalEvent.emit(EventTypes.ReactScroller.Scroll.Up.UnBlock);
-                  LocalEvent.emit(EventTypes.ReactScroller.Scroll.Down.UnBlock);
-                }}
+                onMouseEnter={onMouseEnter}
+                onMouseLeave={onMouseLeave}
               >
                 {items.map((item, index) => {
                   const localData = data?.data?.[item];

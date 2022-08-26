@@ -3,6 +3,7 @@ import HomeScreen from "./components/HomeScreen";
 import ProjectModal from "./components/Projects/ProjectModal";
 import colors from "./utils/colors";
 import "./jQueryLoader";
+import CertificateModal from "./components/About/CertificatesList/CertificateModal";
 
 function App() {
   const appStyle = {
@@ -13,6 +14,7 @@ function App() {
     <div className="App" style={appStyle}>
       <HomeScreen />
       <ProjectModal />
+      <CertificateModal />
     </div>
   );
 }
