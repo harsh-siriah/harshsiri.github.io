@@ -3,21 +3,19 @@ import React, { useCallback } from "react";
 import { useListScrollHandler } from "../../../hooks/useListScrollHandler";
 import CertificatesDataHelper from "./CertificatesData/CertificatesDataHelper";
 import { Accordion } from "react-bootstrap";
+import { isArray, isEmpty } from "lodash";
+import UrlHelper from "../../../utils/UrlHelper";
 
 function CertificateCell(props) {
   const { id, index } = props;
-  const {
-    name,
-    source,
-    url: mainUrl,
-  } = CertificatesDataHelper.getCertificatesDataById(id);
+  const certificateData = CertificatesDataHelper.getCertificatesDataById(id);
 
-  const openInNewTab = useCallback((url) => {
-    window.open(url, "_blank", "noopener,noreferrer");
-  }, []);
+  const { name, source, url: mainUrl } = certificateData;
+
+  const content = certificateData?.content || [];
 
   const openMainCertificate = useCallback(() => {
-    openInNewTab(mainUrl);
+    UrlHelper.openInNewTab(mainUrl);
   }, [mainUrl]);
 
   return (
@@ -36,8 +34,31 @@ function CertificateCell(props) {
           >
             <p className="view-certificate-text">View Certificate </p>
           </div>
-          <p className="body-sub-heading-text">Included courses</p>
-          {}
+          {isArray(content) && !isEmpty(content) ? (
+            <p className="body-sub-heading-text">Included courses</p>
+          ) : null}
+          {isArray(content) &&
+            !isEmpty(content) &&
+            content.map((_item, _index) => {
+              return (
+                <div className="certificates-cell-container" key={_index}>
+                  <div className="certificates-cell-header-container">
+                    <p className="certificates-cell-title">{_item?.name}</p>
+                    <p className="certificates-cell-sub-title">
+                      {_item?.source}
+                    </p>
+                    <div
+                      className="view-certificate-button"
+                      onClick={() => {
+                        UrlHelper.openInNewTab(_item?.url);
+                      }}
+                    >
+                      <p className="view-certificate-text">View Certificate </p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
         </Accordion.Body>
       ) : null}
     </Accordion.Item>
@@ -53,13 +74,15 @@ function CertificatesList() {
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
-      <Accordion>
-        {CertificatesDataHelper.getCertificatesDataItemsList().map(
-          (item, index) => {
-            return <CertificateCell id={item} index={index} />;
-          }
-        )}
-      </Accordion>
+      <div className="overflow-scroll-content">
+        <Accordion>
+          {CertificatesDataHelper.getCertificatesDataItemsList().map(
+            (item, index) => {
+              return <CertificateCell id={item} index={index} key={item} />;
+            }
+          )}
+        </Accordion>
+      </div>
     </div>
   );
 }

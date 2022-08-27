@@ -5,12 +5,12 @@ export const ProjectModalDataKeys = {
   id: "id",
   content: "content",
   title: "title",
+  subtitle: "subtitle",
   date: "data",
   technologies: "technologies",
   summary: "summary",
   image: "image",
-  projectTitle: "project_title",
-  projectData: "project_data",
+  projectCheckItOut: "project_check_it_out",
 };
 
 export class ProjectDataHelper {
@@ -23,7 +23,7 @@ export class ProjectDataHelper {
 
     return {
       id: project[ProjectModalDataKeys.id],
-      title: project[ProjectModalDataKeys.projectTitle],
+      title: project[ProjectModalDataKeys.title],
       technologies: project[ProjectModalDataKeys.technologies],
     };
   }
@@ -31,12 +31,6 @@ export class ProjectDataHelper {
   static getProjectModalData(projectId) {
     const project = ProjectsData.data[projectId];
 
-    return {
-      id: project[ProjectModalDataKeys.id],
-      title: project[ProjectModalDataKeys.projectTitle],
-      technologies: project[ProjectModalDataKeys.technologies],
-      summary: project[ProjectModalDataKeys.summary],
-      content: project[ProjectModalDataKeys.projectData],
-    };
+    return project;
   }
 }

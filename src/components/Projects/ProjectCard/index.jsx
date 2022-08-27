@@ -35,8 +35,12 @@ function ProjectCard(props) {
   }, [projectId]);
 
   return (
-    <Card style={cardStyle} className="container" onClick={onCardClick}>
-      <img src={projectImage} className="main_image" />
+    <Card
+      style={cardStyle}
+      className="project-card-container"
+      onClick={onCardClick}
+    >
+      <img src={projectImage} className="main-image" alt="Project logo" />
       <Card.ImgOverlay className="card_overlay" style={cardStyle}>
         <Col className="my-auto">
           <Card.Text>

@@ -2,6 +2,7 @@
   display: flex;
   padding-top: 8vh;
   flex: 1;
+  justify-content: space-around;
 }
 .education-box {
   height: 55vh;
@@ -22,7 +23,7 @@
 }
 .year-cell-dotted-border {
   height: 35vh;
-  margin-top: 3.5%;
+  margin-top: 4%;
   margin-left: 40px;
   z-index: -1;
   position: absolute;

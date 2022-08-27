@@ -3,8 +3,14 @@
   width: 26vw;
   border: 1px #b5bebe solid;
   border-radius: 20px;
-  overflow-y: scroll;
   padding: 5px;
+  overflow: hidden;
+}
+.overflow-scroll-content {
+  overflow-y: scroll;
+  height: 55vh;
+  width: 25.5vw;
+  padding-right: 5px;
 }
 .certificates-cell-container {
   border: 1px #b5bebe solid;
@@ -22,6 +28,8 @@
   background-color: transparent;
   display: flex;
   flex-direction: column;
+  flex: 1;
+  align-items: center;
 }
 
 .certificates-cell-title {
@@ -39,6 +47,8 @@
 .view-certificate-button {
   background-color: cadetblue;
   border-radius: 20px;
+  height: 40px;
+  margin-bottom: 10px;
 }
 
 .view-certificate-text {
@@ -50,7 +60,7 @@
 
 .body-sub-heading-text {
   color: whitesmoke;
-  font-size: 0.7em;
+  font-size: 0.75em;
   text-align: center;
 }
 
