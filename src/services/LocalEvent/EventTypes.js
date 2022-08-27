@@ -14,4 +14,7 @@ export default {
   ProjectModal: {
     Show: "event_type_project_modal_show",
   },
+  CertificateModal: {
+    Show: "event_type_certificate_modal_show",
+  },
 };

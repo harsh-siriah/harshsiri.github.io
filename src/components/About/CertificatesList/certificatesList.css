@@ -1,0 +1,76 @@
+.certificates-list {
+  height: 55vh;
+  width: 26vw;
+  border: 1px #b5bebe solid;
+  border-radius: 20px;
+  padding: 5px;
+  overflow: hidden;
+}
+.overflow-scroll-content {
+  overflow-y: scroll;
+  height: 55vh;
+  width: 25.5vw;
+  padding-right: 5px;
+}
+.certificates-cell-container {
+  border: 1px #b5bebe solid;
+  border-radius: 20px;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+.certificates-cell-container:hover {
+  border: 1px cadetblue solid;
+  cursor: pointer;
+}
+
+.certificates-cell-header-container {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+}
+
+.certificates-cell-title {
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  margin-top: 1vh;
+}
+.certificates-cell-sub-title {
+  color: cadetblue;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.view-certificate-button {
+  background-color: cadetblue;
+  border-radius: 20px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.view-certificate-text {
+  color: white;
+  font-size: 0.8em;
+  text-align: center;
+  padding: 10px;
+}
+
+.body-sub-heading-text {
+  color: whitesmoke;
+  font-size: 0.75em;
+  text-align: center;
+}
+
+.accordion-button {
+  background-color: transparent !important;
+}
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+
+.accordion-button::after {
+  display: none;
+}

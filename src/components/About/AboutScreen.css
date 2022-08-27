@@ -1,13 +1,15 @@
 .content {
   display: flex;
-  align-items: center;
+  padding-top: 8vh;
   flex: 1;
+  justify-content: space-around;
 }
 .education-box {
   height: 55vh;
-  width: 25vw;
+  width: 26vw;
   border: 1px #b5bebe solid;
   border-radius: 20px;
+  overflow: hidden;
 }
 .year-cell-container {
   display: flex;
@@ -21,7 +23,7 @@
 }
 .year-cell-dotted-border {
   height: 35vh;
-  margin-top: 3.5%;
+  margin-top: 4%;
   margin-left: 40px;
   z-index: -1;
   position: absolute;
@@ -52,7 +54,7 @@
 }
 .institute-name-text {
   color: #e7e7e7;
-  font-size: 1em;
+  font-size: 0.85em;
   line-height: 1.2em;
   margin-bottom: 2px;
 }
@@ -71,4 +73,11 @@
   color: white;
   font-size: 0.8em;
   line-height: 0.2em;
+}
+.sub-headings {
+  color: cadetblue;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  text-align: center;
+  text-transform: uppercase;
 }
