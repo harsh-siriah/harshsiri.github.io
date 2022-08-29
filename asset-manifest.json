@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.85c24b47.css",
-    "main.js": "/static/js/main.b00871be.js",
+    "main.css": "/static/css/main.7ac22f74.css",
+    "main.js": "/static/js/main.70c526e7.js",
     "static/js/787.791e9c38.chunk.js": "/static/js/787.791e9c38.chunk.js",
     "static/media/roomcreation.gif": "/static/media/roomcreation.488269d3a5192c36dbcc.gif",
     "static/media/roomjoining.gif": "/static/media/roomjoining.07b9836317590dda1aec.gif",
@@ -33,12 +33,12 @@
     "static/media/android-logo.svg": "/static/media/android-logo.c503bf464937cf0ce63e47f004c25021.svg",
     "static/media/cross-logo.svg": "/static/media/cross-logo.325952f8b2c7dde3548de645b6c3affb.svg",
     "static/media/list-logo.svg": "/static/media/list-logo.e27b8bba8d8a6a06ce79a60cb3797973.svg",
-    "main.85c24b47.css.map": "/static/css/main.85c24b47.css.map",
-    "main.b00871be.js.map": "/static/js/main.b00871be.js.map",
+    "main.7ac22f74.css.map": "/static/css/main.7ac22f74.css.map",
+    "main.70c526e7.js.map": "/static/js/main.70c526e7.js.map",
     "787.791e9c38.chunk.js.map": "/static/js/787.791e9c38.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.85c24b47.css",
-    "static/js/main.b00871be.js"
+    "static/css/main.7ac22f74.css",
+    "static/js/main.70c526e7.js"
   ]
 }
