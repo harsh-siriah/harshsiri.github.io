@@ -14,5 +14,11 @@ const data = {
       url: "https://play.google.com/store/apps/details?id=com.petronus.petronus",
     },
   ],
+  [ProjectNames.SpellABee]: [
+    {
+      technology: TechnologyNames.Github,
+      url: "https://github.com/PLG-Works/spell-a-bee",
+    },
+  ],
 };
 export default data;

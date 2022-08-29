@@ -4,6 +4,7 @@ import VrHangoutsContent from "./ProjectContent/VrHangouts";
 import PETronusContent from "./ProjectContent/PETronus";
 import CanaryContent from "./ProjectContent/Canary";
 import ProjectsCheckItOutMap from "./ProjectsCheckItOutMap";
+import SpellABeeContent from "./ProjectContent/Spell-A-Bee";
 
 const ProjectData = {
   items: [
@@ -18,7 +19,8 @@ const ProjectData = {
       title: "Spell A Bee",
       technologies: [TechnologyNames.ReactNative],
       summary: `Spell-A-Bee is a hackathon project by our Team "Detectors" during our Work together Week at WeWorks, Pune. The hackathon consisted of 7 teams competing over a span of 4 days. The aim of our project was to explore the usage and implementation of object detection and OCR (Optical Character Recognition) in React Native.`,
-      content: VrHangoutsContent,
+      content: SpellABeeContent,
+      project_check_it_out: ProjectsCheckItOutMap[ProjectNames.SpellABee],
     },
     [ProjectNames.VrHangouts]: {
       id: ProjectNames.VrHangouts,
