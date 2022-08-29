@@ -4,13 +4,35 @@
     "work-experience": {
       "id": "work-experience",
       "title": "Work Experience",
-      "items": ["moxie", "hof-intern", "inGnious", "hof", "iauro", "ntu"],
+      "items": [
+        "plg",
+        "moxie",
+        "hof-intern",
+        "inGnious",
+        "hof",
+        "iauro",
+        "ntu"
+      ],
       "data": {
+        "plg": {
+          "id": "plg",
+          "tab-title": "PLG Works",
+          "title": "Mobile App Developer",
+          "date": "Apr 2022 - Now",
+          "location": "Pune, India (Remote)",
+          "content": [
+            "Worked primarily on building iOS & Android applications using native programming as well as cross platform frameworks like React Native.",
+            "Participated in the Twitter Chirp Developer Challenge 2022: Built Canary",
+            "Participated in the PLG Works Hackathon 2022: Built Spell-A-Bee",
+            "Gained experience working in an agile environment.",
+            "Collaborated with product, UX, and other engineering teams to improve the application experience."
+          ]
+        },
         "moxie": {
           "id": "moxie",
           "tab-title": "Moxie People Inc.",
           "title": "React Native Developer",
-          "date": "Jun 2021 - Now",
+          "date": "Jun 2021 - Apr 2022",
           "location": "Pune, India (Remote)",
           "content": [
             "Worked primarily on the iOS & Android Moxie Platform mobile application which was based on the React-Native framework.",
@@ -59,7 +81,7 @@
           "date": "Jun 2018 - Aug 2018",
           "location": "Pune, India",
           "content": [
-            "Developed a chatbot with an open-source software - BotPress."
+            "Researched about different technologies sued for building chatbots and finally developed a chatbot with an open-source software - BotPress"
           ]
         },
         "ntu": {

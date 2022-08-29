@@ -73,7 +73,7 @@ function ProjectModal() {
       <div>
         <div className="project-modal-separator" />
         <div className="project-check-it-out-container">
-          <p className="project-check-it-out-text">Check it out - </p>
+          <p className="project-check-it-out-text">Check it out: </p>
           {currentProjectData?.[ProjectModalDataKeys.projectCheckItOut]?.map(
             (item) => {
               const projectUrl = item.url;

@@ -37,7 +37,7 @@ function Projects() {
         {[...Array(numPages)].map(() => {
           return (
             <CarouselItem>
-              <Container style={{ width: "50%" }}>
+              <Container style={{ width: "70%", height: "60vh" }}>
                 <Row xs={1} md={2} className="g-4">
                   {projects.map((projectId, idx) => (
                     <Col>

@@ -1,12 +1,34 @@
+import { CanaryGif } from "../../assets/ProjectAssets/Canary";
+
 const renderUrl = ({ url, text }) => {
   return (
-    <a href={url} target={"_blank"} rel="noreferrer">
+    <a
+      href={url}
+      className="project-modal-hyperlink"
+      target={"_blank"}
+      rel="noreferrer"
+    >
       {text}
     </a>
   );
 };
 
 const content = [
+  {
+    content: (
+      <img
+        src={CanaryGif}
+        alt="Canary app"
+        style={{
+          width: "50%",
+          alignSelf: "center",
+          display: "block",
+          marginLeft: "auto",
+          marginRight: "auto",
+        }}
+      />
+    ),
+  },
   {
     title: "Features",
     content: (

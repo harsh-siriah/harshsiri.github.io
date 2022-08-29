@@ -21,7 +21,7 @@ function ExperienceContentTab(props) {
 
   return (
     <div style={styles.container}>
-      <h1>{title}</h1>
+      <h1 style={{ textAlign: "center" }}>{title}</h1>
       <div style={styles.horizontalStack}>
         <p style={styles.pText}>{date}</p>
         <p style={styles.pText}>{location}</p>
@@ -46,5 +46,6 @@ const styles = {
   },
   listItems: {
     color: colors.white,
+    fontSize: "1.2em",
   },
 };

@@ -13,16 +13,3 @@
   color: white;
   background: cadetblue;
 }
-
-a:link {
-  color: cadetblue;
-}
-a:visited {
-  color: cadetblue;
-}
-a:hover {
-  color: rgb(65, 108, 110);
-}
-a:active {
-  color: cadetblue;
-}

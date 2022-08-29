@@ -1,1 +1,1 @@
-export const CanaryGif = require("./Canary-main-gif");
+export const CanaryGif = require("./Canary-main-gif.gif");
