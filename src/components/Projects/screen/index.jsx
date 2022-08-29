@@ -30,6 +30,7 @@ function Projects() {
 
     return (
       <Carousel
+        indicators={false}
         prevIcon={renderCarousalImage(leftArrow)}
         nextIcon={renderCarousalImage(rightArrow)}
         fade={true}

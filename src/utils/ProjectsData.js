@@ -7,10 +7,10 @@ import ProjectsCheckItOutMap from "./ProjectsCheckItOutMap";
 
 const ProjectData = {
   items: [
-    ProjectNames.Petronus,
-    ProjectNames.VrHangouts,
-    ProjectNames.SpellABee,
     ProjectNames.Canary,
+    ProjectNames.VrHangouts,
+    ProjectNames.Petronus,
+    ProjectNames.SpellABee,
   ],
   data: {
     [ProjectNames.SpellABee]: {
