@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.7ac22f74.css",
-    "main.js": "/static/js/main.70c526e7.js",
+    "main.css": "/static/css/main.b2c27e99.css",
+    "main.js": "/static/js/main.29da47bc.js",
     "static/js/787.791e9c38.chunk.js": "/static/js/787.791e9c38.chunk.js",
     "static/media/roomcreation.gif": "/static/media/roomcreation.488269d3a5192c36dbcc.gif",
     "static/media/roomjoining.gif": "/static/media/roomjoining.07b9836317590dda1aec.gif",
@@ -14,31 +14,31 @@
     "static/media/roomcreationactivity.png": "/static/media/roomcreationactivity.2d24d7e6722f28c8a880.png",
     "static/media/roomjoiningactivity.png": "/static/media/roomjoiningactivity.71f6a518c91a3d2b934e.png",
     "static/media/education.png": "/static/media/education.8627b2f5d8c6271ad76f.png",
-    "static/media/VRHangouts.png": "/static/media/VRHangouts.84e6cd43f6a116b91a14.png",
     "static/media/roomjoiningusecase.png": "/static/media/roomjoiningusecase.0d03ee6e184b2e950f48.png",
     "static/media/roomcreationusecase.png": "/static/media/roomcreationusecase.de39a82e17cd4bd2b695.png",
     "static/media/use_case_diagram.png": "/static/media/use_case_diagram.df718ee71bbd79701eb6.png",
     "static/media/spell-a-bee.jpeg": "/static/media/spell-a-bee.ba965bbddc36963edb2b.jpeg",
+    "static/media/VR-Hangouts-Logo.png": "/static/media/VR-Hangouts-Logo.5c08555a0009cda99c5f.png",
     "static/media/Canary-main.png": "/static/media/Canary-main.c9368fc2043578b915ab.png",
     "static/media/HS.png": "/static/media/HS.0169f80a2edc7c625377.png",
     "static/media/react-native-logo.svg": "/static/media/react-native-logo.d80e7ac1c1c16521855e88604f69c195.svg",
-    "static/media/curriculum-vitae.svg": "/static/media/curriculum-vitae.7761415ac14a76ae2b6d3a559ac25847.svg",
     "index.html": "/index.html",
+    "static/media/curriculum-vitae.svg": "/static/media/curriculum-vitae.28d3aca3c7e584b9fe641e33b377d6f9.svg",
     "static/media/linkedin-logo.svg": "/static/media/linkedin-logo.ecdaf202ffca6569a44977b727b755c8.svg",
     "static/media/unity-logo.svg": "/static/media/unity-logo.1c9f6d9554e2a37bb185aa3b36a3383f.svg",
     "static/media/google-play-svg.svg": "/static/media/google-play-svg.cdcb08370253d73f09cc47df9f234996.svg",
-    "static/media/github-logo.svg": "/static/media/github-logo.112eba8a53b49bff6b922adf41e552ff.svg",
+    "static/media/github-logo.svg": "/static/media/github-logo.6e64908e66344cadf68355410e3c4995.svg",
     "static/media/twitter-logo-svg.svg": "/static/media/twitter-logo-svg.181026bb37e9347541fe43cd0740cf78.svg",
     "static/media/firebase-logo.svg": "/static/media/firebase-logo.a54ee94f4c2b925fce0046e544cb23fa.svg",
     "static/media/android-logo.svg": "/static/media/android-logo.c503bf464937cf0ce63e47f004c25021.svg",
-    "static/media/cross-logo.svg": "/static/media/cross-logo.325952f8b2c7dde3548de645b6c3affb.svg",
-    "static/media/list-logo.svg": "/static/media/list-logo.e27b8bba8d8a6a06ce79a60cb3797973.svg",
-    "main.7ac22f74.css.map": "/static/css/main.7ac22f74.css.map",
-    "main.70c526e7.js.map": "/static/js/main.70c526e7.js.map",
+    "static/media/cross-logo.svg": "/static/media/cross-logo.0b18fed956937ad7b6c3abaaf013ae82.svg",
+    "static/media/list-logo.svg": "/static/media/list-logo.495d5685955df76926729664ada91861.svg",
+    "main.b2c27e99.css.map": "/static/css/main.b2c27e99.css.map",
+    "main.29da47bc.js.map": "/static/js/main.29da47bc.js.map",
     "787.791e9c38.chunk.js.map": "/static/js/787.791e9c38.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7ac22f74.css",
-    "static/js/main.70c526e7.js"
+    "static/css/main.b2c27e99.css",
+    "static/js/main.29da47bc.js"
   ]
 }
