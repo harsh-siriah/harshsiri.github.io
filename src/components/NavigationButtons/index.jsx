@@ -5,7 +5,7 @@ import { ReactComponent as CrossLogo } from "../../assets/cross-logo.svg";
 import { Stack } from "react-bootstrap";
 import TransparentButton from "../TransparentButton/TransparentButton";
 
-const menuItems = ["Projects", "Experience", "About", "Contact"];
+const navigationMenuItems = ["Projects", "Experience", "About", "Contact"];
 function NavigationButtons(props) {
   const { onItemSelect, currentSelectedPage } = props;
 
@@ -24,7 +24,7 @@ function NavigationButtons(props) {
   );
 
   const renderMenuItems = useMemo(() => {
-    return menuItems.map((item, index) => {
+    return navigationMenuItems.map((item, index) => {
       const shouldUnderline = currentSelectedPage === index + 1;
 
       const textOptions = {

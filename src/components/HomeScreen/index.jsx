@@ -5,7 +5,7 @@ import React, {
   useRef,
   useState,
 } from "react";
-import { Stack } from "react-bootstrap";
+import { OverlayTrigger, Stack, Tooltip } from "react-bootstrap";
 import ReactPageScroller from "react-page-scroller";
 import { hsLogo } from "../../assets";
 import EventTypes from "../../services/LocalEvent/EventTypes";
@@ -29,11 +29,26 @@ function HomeScreen() {
 
   const componentsList = useMemo(
     () => [
-      <Introduction />,
-      <Projects />,
-      <Experience />,
-      <About />,
-      <ContactPage />,
+      {
+        component: <Introduction />,
+        title: "Home",
+      },
+      {
+        component: <Projects />,
+        title: "Projects",
+      },
+      {
+        component: <Experience />,
+        title: "Experience",
+      },
+      {
+        component: <About />,
+        title: "About Me",
+      },
+      {
+        component: <ContactPage />,
+        title: "Contact Me",
+      },
     ],
     []
   );
@@ -98,25 +113,37 @@ function HomeScreen() {
   const renderPaginationDots = useMemo(() => {
     return (
       <Stack gap={3} style={styles.navigationDotsContainer}>
-        {componentsList.map((_, index) => {
+        {componentsList.map((item, index) => {
           const localStyle = {
-            ...styles.navigationDots,
-            ...{
-              backgroundColor:
-                currentPageNumberRef.current == index
-                  ? colors.activePageDot
-                  : colors.inActivePageDot,
-            },
+            backgroundColor:
+              currentPageNumberRef.current == index
+                ? colors.activePageDot
+                : colors.inActivePageDot,
           };
 
-          return <div style={localStyle} />;
+          return (
+            <OverlayTrigger
+              placement="left"
+              delay={{ show: 100, hide: 100 }}
+              overlay={<Tooltip id="button-tooltip">{item.title}</Tooltip>}
+            >
+              <div
+                className="pagination-dot"
+                style={localStyle}
+                onClick={() => {
+                  console.log("Clicked --> ", index);
+                  onCustomPageNumberSelect(index);
+                }}
+              />
+            </OverlayTrigger>
+          );
         })}
       </Stack>
     );
-  }, [componentsList, currentPageNumber]);
+  }, [componentsList, onCustomPageNumberSelect]);
 
   const renderPages = useMemo(() => {
-    return componentsList.map((item) => item);
+    return componentsList.map((item) => item.component);
   }, [componentsList]);
 
   return (
@@ -128,6 +155,7 @@ function HomeScreen() {
           onClick={() => {
             onCustomPageNumberSelect(0);
           }}
+          alt="Logo"
         />
       </div>
       <div style={styles.navigationButtonsContainer}>
@@ -174,11 +202,6 @@ const styles = {
     alignItems: "flex-end",
     paddingRight: "59px",
     position: "absolute",
-  },
-  navigationDots: {
-    height: "10px",
-    width: "10px",
-    borderRadius: "5px",
   },
   scrollView: {
     zIndex: 9,
