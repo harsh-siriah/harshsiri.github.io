@@ -22,9 +22,9 @@
   margin-left: 20px;
 }
 .year-cell-dotted-border {
-  height: 35vh;
-  margin-top: 4.5%;
-  margin-left: 40px;
+  height: 35%;
+  margin-top: -3.2%;
+  margin-left: 1.5%;
   z-index: -1;
   position: absolute;
   border: 1px #c4c4c4 dashed;

@@ -4,6 +4,10 @@
   height: "100%";
 }
 
+body {
+  background-color: #13314d;
+}
+
 * {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;

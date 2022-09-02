@@ -5,8 +5,8 @@ import EducationData from "./EducationData";
 function EducationBox() {
   return (
     <div className="education-box">
-      <div className="year-cell-dotted-border" />
       <div className="year-cell-container">
+        <div className="year-cell-dotted-border" />
         {EducationData.items.map((item, index) => {
           const currentItemData = EducationData.data[item];
           return (
