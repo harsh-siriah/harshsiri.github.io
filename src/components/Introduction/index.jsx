@@ -1,5 +1,4 @@
 import React from "react";
-import Stack from "react-bootstrap/Stack";
 import TechnologyNames from "../../constants/TechnologyNames";
 import copyTexts from "../../utils/copyTexts";
 import Bubble from "./Bubble";
@@ -7,7 +6,7 @@ import "./introduction.css";
 
 function Introduction(props) {
   return (
-    <Stack style={styles.container} key="Introduction">
+    <div className="introduction-content-container" key="Introduction">
       <h3 style={styles.h3Text} className="intro-text">
         {copyTexts.hiMyNameIs}
       </h3>
@@ -40,19 +39,13 @@ function Introduction(props) {
           technologies={[TechnologyNames.Unity, TechnologyNames.CSharp]}
         />
       </div>
-    </Stack>
+    </div>
   );
 }
 
 export default React.memo(Introduction);
 
 const styles = {
-  container: {
-    display: "flex",
-    height: "100%",
-    marginLeft: "130px",
-    marginTop: "25vh",
-  },
   h3Text: {
     fontSize: "64px",
   },

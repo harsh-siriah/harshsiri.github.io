@@ -31,6 +31,13 @@ h3 {
     flex-direction: column;
   }
 }
+.introduction-content-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-left: 130px;
+  padding-top: 25vh;
+}
 
 .intro-cells-container {
   display: flex;
