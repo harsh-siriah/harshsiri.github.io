@@ -4,12 +4,15 @@ import { ReactComponent as ListLogo } from "../../assets/list-logo.svg";
 import { ReactComponent as CrossLogo } from "../../assets/cross-logo.svg";
 import { Stack } from "react-bootstrap";
 import TransparentButton from "../TransparentButton/TransparentButton";
+import { useThemeContext } from "../../contexts/ThemeContext";
 
 const navigationMenuItems = ["Projects", "Experience", "About", "Contact"];
 function NavigationButtons(props) {
   const { onItemSelect, currentSelectedPage } = props;
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const { toggleTheme } = useThemeContext();
 
   const onButtonPress = useCallback(() => {
     setIsMenuOpen((prevState) => !prevState);
@@ -20,7 +23,7 @@ function NavigationButtons(props) {
       onItemSelect?.(pageNumber);
       onButtonPress();
     },
-    [onItemSelect]
+    [onButtonPress, onItemSelect]
   );
 
   const renderMenuItems = useMemo(() => {
@@ -48,13 +51,24 @@ function NavigationButtons(props) {
         </TransparentButton>
       );
     });
-  }, [_onItemSelect, isMenuOpen]);
+  }, [_onItemSelect, currentSelectedPage, isMenuOpen]);
 
   return (
     <div>
       {isMenuOpen ? (
         <Stack direction="horizontal" gap={3} style={styles.container}>
           {renderMenuItems}
+
+          <div className="theme-toggle-button">
+            <label className="theme-toggle-button-label">
+              <input
+                type="checkbox"
+                className="theme-toggle-button-input"
+                onInputCapture={toggleTheme}
+              />
+              <span className="theme-toggle-button-slider"></span>
+            </label>
+          </div>
           <TransparentButton onClick={onButtonPress}>
             <CrossLogo
               fill="cadetBlue"

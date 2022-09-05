@@ -9,9 +9,21 @@
   justify-content: center;
 }
 
-h1,
+#dark h1,
 h3 {
   color: white;
+}
+
+#light h1,
+h3 {
+  color: #13314d;
+}
+
+.intro-title-text {
+  font-size: 8em;
+}
+.intro-subtitle-text {
+  font-size: 4em;
 }
 
 .intro-text {

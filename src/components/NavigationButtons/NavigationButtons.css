@@ -2,3 +2,59 @@ p {
   text-transform: uppercase;
   color: cadetblue;
 }
+
+:root {
+  --light: #13314d;
+  --dark: white;
+}
+
+.theme-toggle-button {
+  position: relative;
+  width: 50px;
+  top: -10px;
+}
+
+.theme-toggle-button-label {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  background-color: var(--dark);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.theme-toggle-button-input {
+  position: absolute;
+  display: none;
+}
+
+.theme-toggle-button-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.theme-toggle-button-input:checked ~ .theme-toggle-button-slider {
+  background-color: cadetblue;
+}
+
+.theme-toggle-button-slider::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  box-shadow: inset 7px -2px 0px 0px cadetblue;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.theme-toggle-button-input:checked ~ .theme-toggle-button-slider::before {
+  transform: translateX(25px);
+  background-color: white;
+  box-shadow: none;
+}

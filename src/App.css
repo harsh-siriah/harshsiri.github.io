@@ -1,10 +1,15 @@
 .App {
   min-height: 100vh;
-  background-color: #13314d;
   height: "100%";
+  transition: background-color 1s;
+  -webkit-transition: background-color 1s;
 }
 
-body {
+#light {
+  background-color: white;
+}
+
+#dark {
   background-color: #13314d;
 }
 

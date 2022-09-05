@@ -7,12 +7,10 @@ import "./introduction.css";
 function Introduction(props) {
   return (
     <div className="introduction-content-container" key="Introduction">
-      <h3 style={styles.h3Text} className="intro-text">
+      <h3 className="intro-text intro-subtitle-text ">
         {copyTexts.hiMyNameIs}
       </h3>
-      <h1 style={styles.h1Text} className="intro-text">
-        {copyTexts.name}
-      </h1>
+      <h1 className="intro-text intro-title-text ">{copyTexts.name}</h1>
       <div className="intro-cells-container">
         <Bubble
           text={copyTexts.bubble1}

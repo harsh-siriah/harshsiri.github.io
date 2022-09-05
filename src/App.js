@@ -1,23 +1,38 @@
 import "./App.css";
 import HomeScreen from "./components/HomeScreen";
 import ProjectModal from "./components/Projects/ProjectModal";
-import colors from "./utils/colors";
 import "./jQueryLoader";
-import { useEffect } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
+import { ThemeContext, ThemeModes } from "./contexts/ThemeContext";
 
 function App() {
-  const appStyle = {
-    backgroundColor: colors.primaryColor,
-  };
   useEffect(() => {
     document.title = "Harsh Siriah Portfolio";
   }, []);
 
+  const [theme, setTheme] = useState(ThemeModes.Dark);
+
+  const toggleTheme = useCallback(() => {
+    setTheme((currTheme) =>
+      currTheme === ThemeModes.Dark ? ThemeModes.Light : ThemeModes.Dark
+    );
+  }, []);
+
+  const MemoizedValue = useMemo(() => {
+    const value = {
+      mode: theme,
+      toggleTheme,
+    };
+    return value;
+  }, [theme, toggleTheme]);
+
   return (
-    <div className="App" style={appStyle}>
-      <HomeScreen />
-      <ProjectModal />
-    </div>
+    <ThemeContext.Provider value={MemoizedValue}>
+      <div className="App" id={theme}>
+        <HomeScreen />
+        <ProjectModal />
+      </div>
+    </ThemeContext.Provider>
   );
 }
 
