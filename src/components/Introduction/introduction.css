@@ -32,6 +32,10 @@ h3 {
   }
 }
 
+.intro-cells-container {
+  display: flex;
+}
+
 @keyframes fadeInDown {
   0% {
     opacity: 0;

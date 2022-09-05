@@ -8,6 +8,10 @@ const TechnologyNames = {
   ReactNative: "react_native",
   ReactJS: "react_js",
   GooglePlayStore: "google_play_store",
+  CSharp: "c_sharp",
+  Css: "css_three",
+  Html: "html_five",
+  iOS: "iOS",
 };
 export default TechnologyNames;
 
@@ -21,4 +25,8 @@ export const TechnologyNameMap = {
   [TechnologyNames.ReactJS]: "React JS",
   [TechnologyNames.Twitter]: "Twitter API",
   [TechnologyNames.GooglePlayStore]: "Google Play Store",
+  [TechnologyNames.CSharp]: "C#",
+  [TechnologyNames.Css]: "CSS",
+  [TechnologyNames.Html]: "HTML",
+  [TechnologyNames.iOS]: "iOS",
 };
