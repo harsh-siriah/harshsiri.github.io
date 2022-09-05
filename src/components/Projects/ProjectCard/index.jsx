@@ -46,7 +46,7 @@ function ProjectCard(props) {
           <Card.Text>
             <h2 className="project-name">{title}</h2>
           </Card.Text>
-          <div className="technologies">
+          <div className="project-card-technologies">
             {technologies && technologies.length > 0
               ? technologies.map((item) => {
                   const Technology = technologyAssets[item];

@@ -56,12 +56,15 @@ function NavigationButtons(props) {
         <Stack direction="horizontal" gap={3} style={styles.container}>
           {renderMenuItems}
           <TransparentButton onClick={onButtonPress}>
-            <CrossLogo fill="cadetBlue" />
+            <CrossLogo
+              fill="cadetBlue"
+              style={{ height: "4vh", width: "4vw" }}
+            />
           </TransparentButton>
         </Stack>
       ) : (
         <TransparentButton onClick={onButtonPress} style={styles.paddingStyle}>
-          <ListLogo fill="cadetBlue" />
+          <ListLogo fill="cadetBlue" style={{ height: "4vh", width: "4vw" }} />
         </TransparentButton>
       )}
     </div>

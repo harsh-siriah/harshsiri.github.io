@@ -38,7 +38,7 @@ function Bubble(props) {
   return (
     <div className={`bubble ${className}`} style={containerStyle}>
       <h5 style={textStyle}>{text}</h5>
-      <div className="technologies">{renderTechnologies}</div>
+      <div className="intro-bubble-technologies">{renderTechnologies}</div>
     </div>
   );
 }

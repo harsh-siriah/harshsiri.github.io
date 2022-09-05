@@ -14,9 +14,10 @@
   height: 100%;
   cursor: default;
 }
-.technologies {
+.intro-bubble-technologies {
   display: flex;
-  width: min-content;
+  flex-direction: row;
+  justify-content: center;
   max-width: 200px;
   flex-wrap: wrap;
 }

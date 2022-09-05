@@ -131,7 +131,6 @@ function HomeScreen() {
                 className="pagination-dot"
                 style={localStyle}
                 onClick={() => {
-                  console.log("Clicked --> ", index);
                   onCustomPageNumberSelect(index);
                 }}
               />

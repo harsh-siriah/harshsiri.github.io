@@ -10,7 +10,7 @@ function App() {
     backgroundColor: colors.primaryColor,
   };
   useEffect(() => {
-    document.title = "Harsh Siriah";
+    document.title = "Harsh Siriah Portfolio";
   }, []);
 
   return (
