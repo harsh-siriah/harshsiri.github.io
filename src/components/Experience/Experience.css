@@ -8,22 +8,52 @@
   border-radius: 7pt;
 }
 
-.custom-nav-item .custom-nav-link {
+#dark .custom-nav-item .custom-nav-link {
   color: whitesmoke;
+}
+#light .custom-nav-item .custom-nav-link {
+  color: #13314d;
+}
+
+.custom-nav-item .custom-nav-link {
   text-decoration: none;
   text-align: center;
   width: 100%;
 }
-.custom-nav-item:hover .custom-nav-link:not(:hover) {
+
+#dark .custom-nav-item:hover .custom-nav-link:not(:hover) {
+  text-decoration: none;
+  color: cadetblue;
+  text-align: center;
+}
+#light .custom-nav-item:hover .custom-nav-link:not(:hover) {
   text-decoration: none;
   color: cadetblue;
   text-align: center;
 }
 
-.custom-nav-link:hover {
+#dark .custom-nav-link:hover {
   text-decoration: none;
   color: cadetblue;
   cursor: pointer;
+}
+#light .custom-nav-link:hover {
+  text-decoration: none;
+  color: cadetblue;
+  cursor: pointer;
+}
+
+#dark .custom-nav-item-active .custom-nav-link {
+  color: whitesmoke;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+}
+#light .custom-nav-item-active .custom-nav-link {
+  color: whitesmoke;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
 }
 
 .custom-nav-item-active {
@@ -37,9 +67,9 @@
   border-radius: 7pt;
 }
 
-.custom-nav-item-active .custom-nav-link {
-  color: whitesmoke;
-  text-decoration: none;
-  text-align: center;
-  width: 100%;
+#light .experience-content-tab-unordered-list-items {
+  color: #13314d;
+}
+#dark .experience-content-tab-unordered-list-items {
+  color: white;
 }

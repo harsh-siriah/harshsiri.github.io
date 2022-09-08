@@ -32,8 +32,15 @@
   align-items: center;
 }
 
-.certificates-cell-title {
+#dark .certificates-cell-title {
   color: white;
+}
+
+#light .certificates-cell-title {
+  color: #13314d;
+}
+
+.certificates-cell-title {
   font-size: 1em;
   text-align: center;
   margin-top: 1vh;

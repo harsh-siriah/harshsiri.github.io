@@ -8,8 +8,12 @@
   border-radius: 12px;
 }
 
-.a {
+#dark .a {
   color: aliceblue;
+  font-size: medium;
+}
+#light .a {
+  color: #13314d;
   font-size: medium;
 }
 

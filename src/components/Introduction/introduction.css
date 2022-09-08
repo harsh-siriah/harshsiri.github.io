@@ -9,9 +9,26 @@
   justify-content: center;
 }
 
-h1,
-h3 {
+#dark h1 {
   color: white;
+}
+
+#dark h3 {
+  color: white;
+}
+
+#light h1,
+h3 {
+  color: #13314d;
+}
+
+.intro-title-text {
+  font-size: 8em;
+  text-align: start;
+}
+.intro-subtitle-text {
+  font-size: 4em;
+  text-align: start;
 }
 
 .intro-text {
@@ -62,17 +79,5 @@ h3 {
   100% {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@keyframes shake {
-  0% {
-    transform: translateX(-5px);
-  }
-  50% {
-    transform: translateX(5px);
-  }
-  100% {
-    transform: translateX(-5px);
   }
 }

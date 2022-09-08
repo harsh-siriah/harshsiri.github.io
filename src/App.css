@@ -1,10 +1,15 @@
 .App {
   min-height: 100vh;
-  background-color: #13314d;
   height: "100%";
+  transition: background-color 1s;
+  -webkit-transition: background-color 1s;
 }
 
-body {
+#light {
+  background-color: whitesmoke;
+}
+
+#dark {
   background-color: #13314d;
 }
 
@@ -13,7 +18,12 @@ body {
   font-weight: 600;
 }
 
-::selection {
+#light ::selection {
+  color: white;
+  background: #13314d;
+}
+
+#dark ::selection {
   color: white;
   background: cadetblue;
 }

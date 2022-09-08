@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 15vh;
 }
 
 .container {
@@ -35,21 +36,39 @@
   margin-bottom: 20px;
 }
 
+#dark .form-label {
+  color: white;
+}
+#light .form-label {
+  color: #13314d;
+}
+
 .form-label {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
-  color: #ffffff;
+  text-align: start;
+}
+
+.form-input:focus {
+  outline: none;
+  border: 2px solid cadetblue;
+}
+
+#dark .form-input {
+  color: aliceblue;
+}
+#light .form-input {
+  color: #13314d;
 }
 
 .form-input {
-  border: 1px solid #b5bebe;
+  border: 2px solid #b5bebe;
   border-radius: 5px;
   background-color: transparent;
-  outline-color: aliceblue;
-  color: aliceblue;
+  outline-color: cadetblue;
   padding: 5px;
 }
 
@@ -71,4 +90,15 @@
 .social-icons {
   height: 90%;
   aspect-ratio: 1;
+}
+
+#dark .about-harsh-text {
+  color: white;
+}
+#light .about-harsh-text {
+  color: #13314d;
+}
+.about-harsh-text {
+  font-size: 0.8rem;
+  text-align: center;
 }

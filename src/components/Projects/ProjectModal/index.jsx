@@ -125,7 +125,7 @@ function ProjectModal() {
               </p>
             ) : null}
           </div>
-          <div className="technologies" style={maxContentStyle}>
+          <div className="project-modal-technologies" style={maxContentStyle}>
             {renderTechnologies}
           </div>
           {renderCheckItOutSection}

@@ -1,2 +1,3 @@
-export const leftArrow = require("./left-arrow-icon.png");
-export const rightArrow = require("./right-arrow-icon.png");
+import { ReactComponent as LeftArrowIcon } from "./left-arrow-projects.svg";
+
+export const LeftArrowIconSvg = LeftArrowIcon;

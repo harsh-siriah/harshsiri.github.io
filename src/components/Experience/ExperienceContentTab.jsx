@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import colors from "../../utils/colors";
+import "./Experience.css";
 
 function ExperienceContentTab(props) {
   const {
@@ -13,7 +13,14 @@ function ExperienceContentTab(props) {
     return (
       <ul>
         {contentArray.map((item) => {
-          return <li style={styles.listItems}>{item}</li>;
+          return (
+            <li
+              style={styles.listItems}
+              className="experience-content-tab-unordered-list-items"
+            >
+              {item}
+            </li>
+          );
         })}
       </ul>
     );
@@ -45,7 +52,6 @@ const styles = {
     textTransform: "capitalize",
   },
   listItems: {
-    color: colors.white,
     fontSize: "1.2em",
   },
 };
