@@ -10,19 +10,9 @@ import {
 import ProjectCard from "../ProjectCard";
 import { ProjectDataHelper } from "../ProjectModal/projectDataHelper";
 import "./projectScreen.css";
-import { leftArrow, rightArrow } from "../../../assets/arrow_icons";
-import { useCallback } from "react";
+import { LeftArrowIconSvg } from "../../../assets/arrow_icons";
 
 function Projects() {
-  const renderCarousalImage = useCallback(
-    (image) => (
-      <span>
-        <img src={image} alt="Direction Button" />
-      </span>
-    ),
-    []
-  );
-
   const cardGrid = useMemo(() => {
     const projects = ProjectDataHelper.getProjectsArray();
     const numProjects = projects.length;
@@ -31,8 +21,28 @@ function Projects() {
     return (
       <Carousel
         indicators={false}
-        prevIcon={renderCarousalImage(leftArrow)}
-        nextIcon={renderCarousalImage(rightArrow)}
+        prevIcon={
+          <span>
+            <LeftArrowIconSvg
+              className="project-arrow-icons"
+              fill="white"
+              style={{ height: "30px", width: "30px" }}
+            />
+          </span>
+        }
+        nextIcon={
+          <span>
+            <LeftArrowIconSvg
+              className="project-arrow-icons"
+              fill="white"
+              style={{
+                height: "30px",
+                width: "30px",
+                transform: "rotate(180deg)",
+              }}
+            />
+          </span>
+        }
         fade={true}
       >
         {[...Array(numPages)].map(() => {
@@ -52,7 +62,7 @@ function Projects() {
         })}
       </Carousel>
     );
-  }, [renderCarousalImage]);
+  }, []);
 
   return (
     <Container
@@ -64,7 +74,7 @@ function Projects() {
       }}
       key="Projects"
     >
-      <h1 className="title ">PROJECTS</h1>
+      <h1 className="title">PROJECTS</h1>
       {cardGrid}
     </Container>
   );

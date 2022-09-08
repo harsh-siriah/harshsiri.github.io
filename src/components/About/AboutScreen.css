@@ -40,6 +40,7 @@
   margin-right: 10px;
   padding-top: 15px;
 }
+
 .year-cell-text {
   color: white;
   font-size: 0.65em;
@@ -52,27 +53,49 @@
   flex-direction: column;
   display: flex;
 }
-.institute-name-text {
+
+#dark .institute-name-text {
   color: #e7e7e7;
+}
+#dark .institute-name-text:hover {
+  color: white;
+}
+#light .institute-name-text {
+  color: #0c1e30;
+}
+#light .institute-name-text:hover {
+  color: #4a5663;
+}
+
+.institute-name-text {
   font-size: 0.85em;
   line-height: 1.2em;
   margin-bottom: 2px;
+  text-align: start;
 }
 
 .institute-name-text:hover {
   cursor: pointer;
-  color: white;
 }
 
 .degree-text {
   color: cadetblue;
   font-size: 0.75em;
   line-height: 0.75em;
+  text-align: start;
 }
-.content-text {
+
+#dark .content-text {
   color: white;
+}
+#light .content-text {
+  color: #13314d;
+}
+
+.content-text {
   font-size: 0.8em;
   line-height: 0.2em;
+  text-align: start;
 }
 .sub-headings {
   color: cadetblue;

@@ -5,15 +5,32 @@
   height: 50px;
   align-items: center;
   margin-right: 32px;
-  transition: height 0.5s;
-  -webkit-transition: height 0.5s;
+  transition: height 0.5s ease-in-out;
+  -webkit-transition: height 0.5s ease-in-out;
   overflow: hidden;
   padding: 1em;
 }
+
+#light .bubble-text {
+  color: white;
+}
+#dark .bubble-text {
+  color: cadetblue;
+}
+
+#light .bubble {
+  background-color: cadetblue;
+}
+
+#dark .bubble {
+  background-color: white;
+}
+
 .bubble:hover {
   height: 100%;
   cursor: default;
 }
+
 .intro-bubble-technologies {
   display: flex;
   flex-direction: row;
@@ -25,6 +42,14 @@ h5 {
   font-size: 1em;
   text-align: "center";
 }
+
+#light .technology-icon {
+  fill: white;
+}
+#dark .technology-icon {
+  fill: cadetblue;
+}
+
 .technology-icon {
   height: 40px;
   width: 40px;

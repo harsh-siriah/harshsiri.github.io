@@ -1,5 +1,17 @@
+#dark .title {
+  color: cadetblue;
+}
+#light .title {
+  color: cadetblue;
+}
 .title {
   font-size: 48px;
   text-align: center;
-  color: cadetblue;
+}
+
+#light .project-arrow-icons {
+  fill: #13314d;
+}
+#dark .project-arrow-icons {
+  fill: white;
 }

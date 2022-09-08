@@ -2,20 +2,28 @@ import "./App.css";
 import HomeScreen from "./components/HomeScreen";
 import ProjectModal from "./components/Projects/ProjectModal";
 import "./jQueryLoader";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { ThemeContext, ThemeModes } from "./contexts/ThemeContext";
+import Constants from "./constants/Constants";
 
 function App() {
+  const selectedThemeMode = useRef(
+    localStorage.getItem(Constants.LocalStorage.CurrentTheme) || ThemeModes.Dark
+  );
   useEffect(() => {
     document.title = "Harsh Siriah Portfolio";
   }, []);
 
-  const [theme, setTheme] = useState(ThemeModes.Dark);
+  const [theme, setTheme] = useState(selectedThemeMode.current);
 
   const toggleTheme = useCallback(() => {
-    setTheme((currTheme) =>
-      currTheme === ThemeModes.Dark ? ThemeModes.Light : ThemeModes.Dark
-    );
+    setTheme((currTheme) => {
+      const newTheme =
+        currTheme === ThemeModes.Dark ? ThemeModes.Light : ThemeModes.Dark;
+
+      localStorage.setItem(Constants.LocalStorage.CurrentTheme, newTheme);
+      return newTheme;
+    });
   }, []);
 
   const MemoizedValue = useMemo(() => {

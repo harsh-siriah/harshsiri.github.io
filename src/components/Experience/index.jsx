@@ -4,8 +4,6 @@ import colors from "../../utils/colors";
 import ExperienceContentTab from "./ExperienceContentTab";
 import experienceData from "../../utils/experience.json";
 import "./Experience.css";
-import { LocalEvent } from "../../services/LocalEvent/LocalEvent";
-import EventTypes from "../../services/LocalEvent/EventTypes";
 import { useListScrollHandler } from "../../hooks/useListScrollHandler";
 
 const ExperienceDataKeys = {

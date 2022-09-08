@@ -7,27 +7,24 @@ import "./introduction.css";
 function Introduction(props) {
   return (
     <div className="introduction-content-container" key="Introduction">
-      <h3 className="intro-text intro-subtitle-text ">
-        {copyTexts.hiMyNameIs}
-      </h3>
+      <h3 className="intro-text intro-subtitle-text">{copyTexts.hiMyNameIs}</h3>
       <h1 className="intro-text intro-title-text ">{copyTexts.name}</h1>
       <div className="intro-cells-container">
         <Bubble
           text={copyTexts.bubble1}
           className="intro-cells"
           technologies={[
-            TechnologyNames.ReactNative,
             TechnologyNames.Android,
+            TechnologyNames.ReactNative,
             TechnologyNames.iOS,
-            TechnologyNames.Firebase,
           ]}
         />
         <Bubble
           text={copyTexts.bubble2}
           className="intro-cells"
           technologies={[
-            TechnologyNames.ReactJS,
             TechnologyNames.Html,
+            TechnologyNames.ReactJS,
             TechnologyNames.Css,
           ]}
         />
@@ -42,12 +39,3 @@ function Introduction(props) {
 }
 
 export default React.memo(Introduction);
-
-const styles = {
-  h3Text: {
-    fontSize: "64px",
-  },
-  h1Text: {
-    fontSize: "128px",
-  },
-};

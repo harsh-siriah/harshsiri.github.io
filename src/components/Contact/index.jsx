@@ -51,7 +51,7 @@ function ContactPage() {
             style={styles.profImage}
           />
           <div style={styles.separator} />
-          <p style={styles.aboutText}>{copyTexts.aboutText}</p>
+          <p className="about-harsh-text">{copyTexts.aboutText}</p>
           <div className="social-icons-container">
             <a href={Links.LinkedIn} target="_blank">
               <LinkedInLogoSvg
@@ -100,10 +100,5 @@ const styles = {
     borderRadius: "10px",
     marginTop: "20px",
     marginBottom: "20px",
-  },
-  aboutText: {
-    fontSize: "0.8rem",
-    color: colors.textColor,
-    textAlign: "center",
   },
 };
