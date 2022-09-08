@@ -65,8 +65,28 @@
   padding: 10px;
 }
 
-.body-sub-heading-text {
+.body-sub-heading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.body-sub-heading-divider {
+  width: 50%;
+  border: 1px #b5bebe solid;
+  justify-self: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#light .body-sub-heading-text {
+  color: #13314d;
+}
+#dark .body-sub-heading-text {
   color: whitesmoke;
+}
+.body-sub-heading-text {
   font-size: 0.75em;
   text-align: center;
 }

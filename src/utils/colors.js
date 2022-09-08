@@ -6,7 +6,7 @@ export default {
   textColor: "#FFFFFF",
 
   inActivePageDot: "#B5BEBE",
-  activePageDot: "#3FD9E3",
+  activePageDot: "cadetblue",
 
   white: "#FFFFFF",
   black: "#000000",

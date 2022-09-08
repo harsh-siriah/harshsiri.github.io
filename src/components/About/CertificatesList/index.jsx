@@ -35,7 +35,10 @@ function CertificateCell(props) {
             <p className="view-certificate-text">View Certificate </p>
           </div>
           {isArray(content) && !isEmpty(content) ? (
-            <p className="body-sub-heading-text">Included courses</p>
+            <div className="body-sub-heading-container">
+              <div className="body-sub-heading-divider" />
+              <p className="body-sub-heading-text">Included courses</p>
+            </div>
           ) : null}
           {isArray(content) &&
             !isEmpty(content) &&
