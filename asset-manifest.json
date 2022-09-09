@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.5613c957.css",
-    "main.js": "/static/js/main.4e4e25e1.js",
-    "static/js/787.ee8b5fd7.chunk.js": "/static/js/787.ee8b5fd7.chunk.js",
+    "main.js": "/static/js/main.9dd4487f.js",
+    "static/js/787.791e9c38.chunk.js": "/static/js/787.791e9c38.chunk.js",
     "static/media/roomcreation.gif": "/static/media/roomcreation.488269d3a5192c36dbcc.gif",
     "static/media/roomjoining.gif": "/static/media/roomjoining.07b9836317590dda1aec.gif",
     "static/media/playerjoining.gif": "/static/media/playerjoining.b862f6380358b8db683f.gif",
@@ -41,11 +41,11 @@
     "static/media/cross-logo.svg": "/static/media/cross-logo.0b18fed956937ad7b6c3abaaf013ae82.svg",
     "static/media/list-logo.svg": "/static/media/list-logo.495d5685955df76926729664ada91861.svg",
     "main.5613c957.css.map": "/static/css/main.5613c957.css.map",
-    "main.4e4e25e1.js.map": "/static/js/main.4e4e25e1.js.map",
-    "787.ee8b5fd7.chunk.js.map": "/static/js/787.ee8b5fd7.chunk.js.map"
+    "main.9dd4487f.js.map": "/static/js/main.9dd4487f.js.map",
+    "787.791e9c38.chunk.js.map": "/static/js/787.791e9c38.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5613c957.css",
-    "static/js/main.4e4e25e1.js"
+    "static/js/main.9dd4487f.js"
   ]
 }
