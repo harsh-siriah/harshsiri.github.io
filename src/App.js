@@ -5,10 +5,18 @@ import "./jQueryLoader";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { ThemeContext, ThemeModes } from "./contexts/ThemeContext";
 import Constants from "./constants/Constants";
+import moment from "moment";
 
 function App() {
+  const storedTheme = localStorage.getItem(Constants.LocalStorage.CurrentTheme);
+
+  //Setting prefered theme as the stored one or default to theme according to time of the day
   const selectedThemeMode = useRef(
-    localStorage.getItem(Constants.LocalStorage.CurrentTheme) || ThemeModes.Dark
+    storedTheme
+      ? storedTheme
+      : moment().format("a") === "pm"
+      ? ThemeModes.Dark
+      : ThemeModes.Light
   );
   useEffect(() => {
     document.title = "Harsh Siriah Portfolio";
