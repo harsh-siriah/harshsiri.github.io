@@ -21,15 +21,21 @@ function ContactPage() {
           >
             <div className="form-item">
               <label className="form-label">Email address</label>
-              <input className="form-input" type="email" required />
+              <input
+                className="form-input"
+                type="email"
+                name="email"
+                required
+              />
             </div>
             <div className="form-item">
               <label className="form-label">Name</label>
-              <input className="form-input" type="text" required />
+              <input className="form-input" type="text" name="name" required />
             </div>
             <div className="form-item">
               <label className="form-label">Message</label>
               <textarea
+                name="message"
                 className="form-input form-input-message"
                 type="text"
                 required
