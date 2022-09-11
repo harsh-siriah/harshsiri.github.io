@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5613c957.css",
-    "main.js": "/static/js/main.9dd4487f.js",
+    "main.js": "/static/js/main.9a0d2369.js",
     "static/js/787.791e9c38.chunk.js": "/static/js/787.791e9c38.chunk.js",
     "static/media/roomcreation.gif": "/static/media/roomcreation.488269d3a5192c36dbcc.gif",
     "static/media/roomjoining.gif": "/static/media/roomjoining.07b9836317590dda1aec.gif",
@@ -14,11 +14,19 @@
     "static/media/roomcreationactivity.png": "/static/media/roomcreationactivity.2d24d7e6722f28c8a880.png",
     "static/media/roomjoiningactivity.png": "/static/media/roomjoiningactivity.71f6a518c91a3d2b934e.png",
     "static/media/education.png": "/static/media/education.8627b2f5d8c6271ad76f.png",
+    "static/media/list-page.jpeg": "/static/media/list-page.e9654c4b21b9ed9e96e7.jpeg",
     "static/media/roomjoiningusecase.png": "/static/media/roomjoiningusecase.0d03ee6e184b2e950f48.png",
+    "static/media/about-page.jpeg": "/static/media/about-page.47cb28f9ffa5899e54b8.jpeg",
+    "static/media/landing-screen.jpeg": "/static/media/landing-screen.6c4b530fe48a53d612a3.jpeg",
     "static/media/roomcreationusecase.png": "/static/media/roomcreationusecase.de39a82e17cd4bd2b695.png",
+    "static/media/register-page.webp": "/static/media/register-page.1abb44338bfe07dcdc64.webp",
     "static/media/use_case_diagram.png": "/static/media/use_case_diagram.df718ee71bbd79701eb6.png",
+    "static/media/filters-page.jpeg": "/static/media/filters-page.c7ae10fd2b6d8b4cfda8.jpeg",
+    "static/media/upload-post.webp": "/static/media/upload-post.bf4930057ef027abc1d5.webp",
     "static/media/spell-a-bee.jpeg": "/static/media/spell-a-bee.ba965bbddc36963edb2b.jpeg",
     "static/media/VR-Hangouts-Logo.png": "/static/media/VR-Hangouts-Logo.5c08555a0009cda99c5f.png",
+    "static/media/details-page.webp": "/static/media/details-page.2a54cc6bf32cd43c21db.webp",
+    "static/media/login-page.webp": "/static/media/login-page.fec8021fad4849fc2b72.webp",
     "static/media/Canary-main.png": "/static/media/Canary-main.c9368fc2043578b915ab.png",
     "static/media/HS.png": "/static/media/HS.0169f80a2edc7c625377.png",
     "static/media/react-native-logo.svg": "/static/media/react-native-logo.d80e7ac1c1c16521855e88604f69c195.svg",
@@ -41,11 +49,11 @@
     "static/media/cross-logo.svg": "/static/media/cross-logo.0b18fed956937ad7b6c3abaaf013ae82.svg",
     "static/media/list-logo.svg": "/static/media/list-logo.495d5685955df76926729664ada91861.svg",
     "main.5613c957.css.map": "/static/css/main.5613c957.css.map",
-    "main.9dd4487f.js.map": "/static/js/main.9dd4487f.js.map",
+    "main.9a0d2369.js.map": "/static/js/main.9a0d2369.js.map",
     "787.791e9c38.chunk.js.map": "/static/js/787.791e9c38.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5613c957.css",
-    "static/js/main.9dd4487f.js"
+    "static/js/main.9a0d2369.js"
   ]
 }
