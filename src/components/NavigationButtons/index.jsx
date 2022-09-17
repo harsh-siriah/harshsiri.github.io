@@ -106,22 +106,21 @@ function NavigationButtons(props) {
           className="navigation-buttons-menu"
         >
           {renderMenuItems}
-
-          <div className="theme-toggle-btn-round" onClick={onThemeChangeClick}>
-            <div className="theme-toggle-btn-round-content">
-              <LightModeIconSvg
-                id="light-mode-icon-svg"
-                fill="white"
-                style={{ height: "20px", width: "20px" }}
-              />
-              <DarkModeIconSvg
-                id="dark-mode-icon-svg"
-                fill="white"
-                style={{ height: "20px", width: "20px" }}
-              />
-            </div>
-          </div>
         </Stack>
+        <div className="theme-toggle-btn-round" onClick={onThemeChangeClick}>
+          <div className="theme-toggle-btn-round-content">
+            <LightModeIconSvg
+              id="light-mode-icon-svg"
+              fill="white"
+              style={{ height: "20px", width: "20px" }}
+            />
+            <DarkModeIconSvg
+              id="dark-mode-icon-svg"
+              fill="white"
+              style={{ height: "20px", width: "20px" }}
+            />
+          </div>
+        </div>
         {isMenuOpen ? (
           <TransparentButton onClick={onButtonPress}>
             <CrossLogo
