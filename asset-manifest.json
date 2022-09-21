@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.05a3bc06.css",
-    "main.js": "/static/js/main.8e9fa5e3.js",
+    "main.js": "/static/js/main.04631709.js",
     "static/js/787.791e9c38.chunk.js": "/static/js/787.791e9c38.chunk.js",
+    "static/media/applogger-working.gif": "/static/media/applogger-working.1c9056ed38649c62cda3.gif",
     "static/media/roomcreation.gif": "/static/media/roomcreation.488269d3a5192c36dbcc.gif",
     "static/media/roomjoining.gif": "/static/media/roomjoining.07b9836317590dda1aec.gif",
     "static/media/playerjoining.gif": "/static/media/playerjoining.b862f6380358b8db683f.gif",
@@ -13,11 +14,11 @@
     "static/media/flowchart.png": "/static/media/flowchart.7115608e5383fad3f87f.png",
     "static/media/roomcreationactivity.png": "/static/media/roomcreationactivity.2d24d7e6722f28c8a880.png",
     "static/media/roomjoiningactivity.png": "/static/media/roomjoiningactivity.71f6a518c91a3d2b934e.png",
-    "static/media/education.png": "/static/media/education.8627b2f5d8c6271ad76f.png",
     "static/media/list-page.jpeg": "/static/media/list-page.e9654c4b21b9ed9e96e7.jpeg",
     "static/media/roomjoiningusecase.png": "/static/media/roomjoiningusecase.0d03ee6e184b2e950f48.png",
     "static/media/about-page.jpeg": "/static/media/about-page.47cb28f9ffa5899e54b8.jpeg",
     "static/media/landing-screen.jpeg": "/static/media/landing-screen.6c4b530fe48a53d612a3.jpeg",
+    "static/media/applogger-logo.png": "/static/media/applogger-logo.a3ac5fcf15d5bfada27c.png",
     "static/media/roomcreationusecase.png": "/static/media/roomcreationusecase.de39a82e17cd4bd2b695.png",
     "static/media/register-page.webp": "/static/media/register-page.1abb44338bfe07dcdc64.webp",
     "static/media/use_case_diagram.png": "/static/media/use_case_diagram.df718ee71bbd79701eb6.png",
@@ -30,15 +31,16 @@
     "static/media/Canary-main.png": "/static/media/Canary-main.c9368fc2043578b915ab.png",
     "static/media/HS.png": "/static/media/HS.0169f80a2edc7c625377.png",
     "static/media/react-native-logo.svg": "/static/media/react-native-logo.d80e7ac1c1c16521855e88604f69c195.svg",
+    "static/media/internet-logo.svg": "/static/media/internet-logo.53b35c3f68d8707dde30d64c9d8e5cfd.svg",
     "static/media/ios-logo.svg": "/static/media/ios-logo.f56f9c2f4fa3917e95dfe28e06894c07.svg",
+    "static/media/curriculum-vitae.svg": "/static/media/curriculum-vitae.7761415ac14a76ae2b6d3a559ac25847.svg",
     "index.html": "/index.html",
-    "static/media/curriculum-vitae.svg": "/static/media/curriculum-vitae.28d3aca3c7e584b9fe641e33b377d6f9.svg",
     "static/media/linkedin-logo.svg": "/static/media/linkedin-logo.ecdaf202ffca6569a44977b727b755c8.svg",
     "static/media/c-sharp-logo.svg": "/static/media/c-sharp-logo.341a6eb0e42e11d6aed94ea288b185f3.svg",
     "static/media/unity-logo.svg": "/static/media/unity-logo.1c9f6d9554e2a37bb185aa3b36a3383f.svg",
     "static/media/google-play-svg.svg": "/static/media/google-play-svg.cdcb08370253d73f09cc47df9f234996.svg",
-    "static/media/github-logo.svg": "/static/media/github-logo.6e64908e66344cadf68355410e3c4995.svg",
-    "static/media/left-arrow-projects.svg": "/static/media/left-arrow-projects.f952d538a2760f2a394734e45dcbe871.svg",
+    "static/media/left-arrow-projects.svg": "/static/media/left-arrow-projects.ca18bc8a880d7690963e9951cb91d12d.svg",
+    "static/media/github-logo.svg": "/static/media/github-logo.112eba8a53b49bff6b922adf41e552ff.svg",
     "static/media/twitter-logo-svg.svg": "/static/media/twitter-logo-svg.181026bb37e9347541fe43cd0740cf78.svg",
     "static/media/light-mode.svg": "/static/media/light-mode.8a221d8b5d63b1a9241ddce9d9be1d4e.svg",
     "static/media/css3.svg": "/static/media/css3.fcf3a3af75b740cc148c2665e09a299b.svg",
@@ -46,14 +48,14 @@
     "static/media/firebase-logo.svg": "/static/media/firebase-logo.a54ee94f4c2b925fce0046e544cb23fa.svg",
     "static/media/dark-mode.svg": "/static/media/dark-mode.9305a6481f14edfd675e7784d0e7d8a0.svg",
     "static/media/android-logo.svg": "/static/media/android-logo.c503bf464937cf0ce63e47f004c25021.svg",
-    "static/media/cross-logo.svg": "/static/media/cross-logo.0b18fed956937ad7b6c3abaaf013ae82.svg",
-    "static/media/list-logo.svg": "/static/media/list-logo.495d5685955df76926729664ada91861.svg",
+    "static/media/cross-logo.svg": "/static/media/cross-logo.325952f8b2c7dde3548de645b6c3affb.svg",
+    "static/media/list-logo.svg": "/static/media/list-logo.e27b8bba8d8a6a06ce79a60cb3797973.svg",
     "main.05a3bc06.css.map": "/static/css/main.05a3bc06.css.map",
-    "main.8e9fa5e3.js.map": "/static/js/main.8e9fa5e3.js.map",
+    "main.04631709.js.map": "/static/js/main.04631709.js.map",
     "787.791e9c38.chunk.js.map": "/static/js/787.791e9c38.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.05a3bc06.css",
-    "static/js/main.8e9fa5e3.js"
+    "static/js/main.04631709.js"
   ]
 }
