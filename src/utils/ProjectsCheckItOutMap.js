@@ -20,5 +20,15 @@ const data = {
       url: "https://github.com/PLG-Works/spell-a-bee",
     },
   ],
+  [ProjectNames.AppLogger]: [
+    {
+      technology: TechnologyNames.Internet,
+      url: "https://plgworks.com/applogger",
+    },
+    {
+      technology: TechnologyNames.Github,
+      url: "https://github.com/PLG-Works/applogger",
+    },
+  ],
 };
 export default data;

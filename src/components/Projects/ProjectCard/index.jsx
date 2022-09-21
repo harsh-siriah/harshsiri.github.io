@@ -1,9 +1,9 @@
 import React, { useCallback, useMemo } from "react";
 import { Card, Col } from "react-bootstrap";
-import projectAssets from "../../../assets/projectAssets";
+import projectAssets from "../../../assets/ProjectAssets";
 import EventTypes from "../../../services/LocalEvent/EventTypes";
 import { LocalEvent } from "../../../services/LocalEvent/LocalEvent";
-import technologyAssets from "../../../assets/technologyAssets";
+import technologyAssets from "../../../assets/TechnologyAssets";
 import {
   ProjectDataHelper,
   ProjectModalDataKeys,

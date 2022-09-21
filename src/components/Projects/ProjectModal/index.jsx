@@ -6,7 +6,7 @@ import "./projectModal.css";
 import colors from "../../../utils/colors";
 import { useMemo } from "react";
 import { ProjectDataHelper, ProjectModalDataKeys } from "./projectDataHelper";
-import technologyAssets from "../../../assets/technologyAssets";
+import technologyAssets from "../../../assets/TechnologyAssets";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
 import { TechnologyNameMap } from "../../../constants/TechnologyNames";
 import UrlHelper from "../../../utils/UrlHelper";

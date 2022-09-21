@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useState } from "react";
 import {
   Carousel,
   CardGroup,
@@ -13,14 +13,23 @@ import "./projectScreen.css";
 import { LeftArrowIconSvg } from "../../../assets/arrow_icons";
 
 function Projects() {
-  const cardGrid = useMemo(() => {
-    const projects = ProjectDataHelper.getProjectsArray();
-    const numProjects = projects.length;
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex, e) => {
+    console.log("Handle swicth", selectedIndex);
+    setIndex(selectedIndex);
+  };
+  const CardGrid = useMemo(() => {
+    const projectsArray = ProjectDataHelper.getProjectsArray();
+    const numProjects = projectsArray.length;
     const numPages = Math.ceil(numProjects / 4);
 
+    console.log({ numPages, projectsArray });
     return (
       <Carousel
         indicators={false}
+        activeIndex={index}
+        onSelect={handleSelect}
         prevIcon={
           <span>
             <LeftArrowIconSvg
@@ -45,16 +54,25 @@ function Projects() {
         }
         fade={true}
       >
-        {[...Array(numPages)].map(() => {
+        {[...Array(numPages)].map((_, index1) => {
+          const numProjectsInCarousalPage =
+            (index1 + 1) * 4 > numProjects ? numProjects % 4 : 4 * (index1 + 1);
+          console.log({ numProjectsInCarousalPage, index1 });
           return (
-            <CarouselItem>
+            <CarouselItem key={index1}>
               <Container style={{ width: "70%", height: "60vh" }}>
                 <Row xs={1} md={2} className="g-4">
-                  {projects.map((projectId, idx) => (
-                    <Col>
-                      <ProjectCard projectId={projectId} />
-                    </Col>
-                  ))}
+                  {[...Array(numProjectsInCarousalPage)].map((_, index2) => {
+                    const currentProjectIndex = index2 + index1 * 4;
+
+                    const projectId = projectsArray[currentProjectIndex];
+
+                    return (
+                      <Col key={index2}>
+                        <ProjectCard projectId={projectId} />
+                      </Col>
+                    );
+                  })}
                 </Row>
               </Container>
             </CarouselItem>
@@ -62,7 +80,7 @@ function Projects() {
         })}
       </Carousel>
     );
-  }, []);
+  }, [index]);
 
   return (
     <Container
@@ -75,7 +93,7 @@ function Projects() {
       key="Projects"
     >
       <h1 className="title">PROJECTS</h1>
-      {cardGrid}
+      {CardGrid}
     </Container>
   );
 }

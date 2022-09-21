@@ -1,7 +1,7 @@
 import React from "react";
 import { useMemo } from "react";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
-import technologyAssets from "../../../assets/technologyAssets";
+import technologyAssets from "../../../assets/TechnologyAssets";
 import { TechnologyNameMap } from "../../../constants/TechnologyNames";
 import "./bubble.css";
 

@@ -12,6 +12,7 @@ const TechnologyNames = {
   Css: "css_three",
   Html: "html_five",
   iOS: "iOS",
+  Internet: "internet",
 };
 export default TechnologyNames;
 
@@ -29,4 +30,5 @@ export const TechnologyNameMap = {
   [TechnologyNames.Css]: "CSS",
   [TechnologyNames.Html]: "HTML",
   [TechnologyNames.iOS]: "iOS",
+  [TechnologyNames.Internet]: "Website",
 };

@@ -5,13 +5,15 @@ import PETronusContent from "./ProjectContent/PETronus";
 import CanaryContent from "./ProjectContent/Canary";
 import ProjectsCheckItOutMap from "./ProjectsCheckItOutMap";
 import SpellABeeContent from "./ProjectContent/Spell-A-Bee";
+import AppLoggerContent from "./ProjectContent/AppLogger";
 
 const ProjectData = {
   items: [
+    ProjectNames.AppLogger,
     ProjectNames.Canary,
     ProjectNames.VrHangouts,
     ProjectNames.Petronus,
-    ProjectNames.SpellABee,
+    // ProjectNames.SpellABee,
   ],
   data: {
     [ProjectNames.SpellABee]: {
@@ -48,6 +50,20 @@ const ProjectData = {
         "A privacy-focused app that allows you to discover & bookmark Twitter content while keeping all your data private without tracking your actions.",
       content: CanaryContent,
       project_check_it_out: ProjectsCheckItOutMap[ProjectNames.Canary],
+    },
+    [ProjectNames.AppLogger]: {
+      id: ProjectNames.AppLogger,
+      title: "AppLogger",
+      subtitle: "React Native library to backtrace your testing steps",
+      technologies: [
+        TechnologyNames.Css,
+        TechnologyNames.ReactNative,
+        TechnologyNames.Html,
+      ],
+      summary:
+        "React Native library to help you and your team backtrace testing steps, and get session details and device information. Securely!",
+      content: AppLoggerContent,
+      project_check_it_out: ProjectsCheckItOutMap[ProjectNames.AppLogger],
     },
   },
 };
