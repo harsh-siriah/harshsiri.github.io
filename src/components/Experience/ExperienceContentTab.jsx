@@ -14,10 +14,7 @@ function ExperienceContentTab(props) {
       <ul>
         {contentArray.map((item) => {
           return (
-            <li
-              style={styles.listItems}
-              className="experience-content-tab-unordered-list-items"
-            >
+            <li className="experience-content-tab-unordered-list-items">
               {item}
             </li>
           );
@@ -50,8 +47,5 @@ const styles = {
   },
   pText: {
     textTransform: "capitalize",
-  },
-  listItems: {
-    fontSize: "1.2em",
   },
 };

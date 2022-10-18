@@ -69,7 +69,9 @@
 
 #light .experience-content-tab-unordered-list-items {
   color: #13314d;
+  font-size: 1.2vw;
 }
 #dark .experience-content-tab-unordered-list-items {
   color: white;
+  font-size: 1.2vw;
 }

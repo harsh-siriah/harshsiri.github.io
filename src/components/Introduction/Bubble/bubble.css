@@ -9,6 +9,7 @@
   -webkit-transition: height 0.5s ease-in-out;
   overflow: hidden;
   padding: 1em;
+  padding-top: 0.8em;
 }
 
 #light .bubble-text {
