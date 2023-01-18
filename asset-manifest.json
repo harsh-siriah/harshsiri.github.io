@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4fa7dea5.css",
-    "main.js": "/static/js/main.0aa9b97f.js",
+    "main.css": "/static/css/main.9f9e3be7.css",
+    "main.js": "/static/js/main.a3590916.js",
     "static/js/787.791e9c38.chunk.js": "/static/js/787.791e9c38.chunk.js",
     "static/media/applogger-working.gif": "/static/media/applogger-working.1c9056ed38649c62cda3.gif",
     "static/media/roomcreation.gif": "/static/media/roomcreation.488269d3a5192c36dbcc.gif",
@@ -50,12 +50,12 @@
     "static/media/android-logo.svg": "/static/media/android-logo.c503bf464937cf0ce63e47f004c25021.svg",
     "static/media/cross-logo.svg": "/static/media/cross-logo.0b18fed956937ad7b6c3abaaf013ae82.svg",
     "static/media/list-logo.svg": "/static/media/list-logo.495d5685955df76926729664ada91861.svg",
-    "main.4fa7dea5.css.map": "/static/css/main.4fa7dea5.css.map",
-    "main.0aa9b97f.js.map": "/static/js/main.0aa9b97f.js.map",
+    "main.9f9e3be7.css.map": "/static/css/main.9f9e3be7.css.map",
+    "main.a3590916.js.map": "/static/js/main.a3590916.js.map",
     "787.791e9c38.chunk.js.map": "/static/js/787.791e9c38.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4fa7dea5.css",
-    "static/js/main.0aa9b97f.js"
+    "static/css/main.9f9e3be7.css",
+    "static/js/main.a3590916.js"
   ]
 }
