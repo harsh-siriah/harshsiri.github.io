@@ -5,6 +5,7 @@
       "id": "work-experience",
       "title": "Work Experience",
       "items": [
+        "mloop",
         "plg",
         "moxie",
         "hof-intern",
@@ -14,11 +15,22 @@
         "ntu"
       ],
       "data": {
+        "mloop": {
+          "id": "mloop",
+          "tab-title": "ModernLoop",
+          "title": "Software Engineer",
+          "date": "Nov 2022 - Now",
+          "location": "Pune, India (Remote)",
+          "content": [
+            "Working on ModernLoop website using ReactJS",
+            "Collaborated with product, UX, and other engineering teams to improve the application experience."
+          ]
+        },
         "plg": {
           "id": "plg",
           "tab-title": "PLG Works",
           "title": "Mobile App Developer",
-          "date": "Apr 2022 - Now",
+          "date": "Apr 2022 - Nov 2022",
           "location": "Pune, India (Remote)",
           "content": [
             "Worked primarily on building iOS & Android applications using native programming as well as cross platform frameworks like React Native.",
