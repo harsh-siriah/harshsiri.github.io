@@ -13,7 +13,7 @@ const ProjectData = {
     ProjectNames.Canary,
     ProjectNames.VrHangouts,
     ProjectNames.Petronus,
-    // ProjectNames.SpellABee,
+    ProjectNames.SpellABee,
   ],
   data: {
     [ProjectNames.SpellABee]: {

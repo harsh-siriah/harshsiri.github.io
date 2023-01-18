@@ -151,6 +151,69 @@ const content = [
       </div>
     ),
   },
+
+  {
+    title: "Screenshots",
+    content: (
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <table style={{ borderSpacing: "20px", borderCollapse: "collapse" }}>
+          <tbody>
+            <tr>
+              <td>
+                <img
+                  src="https://user-images.githubusercontent.com/32268377/169829251-0413f124-f659-46e0-8eb7-66d7b6604a92.jpg"
+                  alt="Splash Screen"
+                  width="150"
+                />
+              </td>
+              <td>
+                <img
+                  src="https://user-images.githubusercontent.com/86604753/170272199-cf24c4b9-b49a-49a1-b882-9201b6ef455f.jpg"
+                  alt="Language Selection"
+                  width="150"
+                />
+              </td>
+              <td>
+                <img
+                  src="https://user-images.githubusercontent.com/86604753/170272223-2141821b-b53c-475e-aded-189b9a942029.jpg"
+                  alt="Language Selection"
+                  width="150"
+                />
+              </td>
+
+              <td>
+                <img
+                  src="https://user-images.githubusercontent.com/86604753/170271969-5e4ecf3f-91d6-424a-a6d4-4941978eb95e.jpg"
+                  alt="Loading Screen"
+                  width="150"
+                />
+              </td>
+              <td>
+                <img
+                  src="https://user-images.githubusercontent.com/86604753/170271856-48f88bed-9e71-445f-88f0-16f122b01345.jpg"
+                  alt="Result Screen"
+                  width="150"
+                />
+              </td>
+              <td>
+                <img
+                  src="https://user-images.githubusercontent.com/86604753/170271757-ecc05558-6f28-4ee0-a2b5-6727afbf0b1b.jpg"
+                  alt="Result Screen 2"
+                  width="150"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    ),
+  },
 ];
 
 export default content;
