@@ -26,7 +26,7 @@ function Projects() {
             <LeftArrowIconSvg
               className="project-arrow-icons"
               fill="white"
-              style={{ height: "30px", width: "30px" }}
+              style={{ height: "20px", width: "20px", marginBottom: "5px" }}
             />
           </span>
         }
@@ -36,14 +36,14 @@ function Projects() {
               className="project-arrow-icons"
               fill="white"
               style={{
-                height: "30px",
-                width: "30px",
+                height: "20px",
+                width: "20px",
                 transform: "rotate(180deg)",
+                marginBottom: "5px"
               }}
             />
           </span>
         }
-        fade={true}
       >
         {[...Array(numPages)].map((_, pageIndex) => {
           const numProjectsInCarousalPage =
@@ -86,6 +86,7 @@ function Projects() {
         height: "100%",
         alignItems: "center",
         display: "flex",
+
       }}
       key="Projects"
     >

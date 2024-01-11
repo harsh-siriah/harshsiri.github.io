@@ -4,6 +4,10 @@ const data = {
   bubble1: "Mobile App Developer",
   bubble2: "Frontend Developer",
   bubble3: "Game Developer",
-  aboutText: `Hi! I’m Harsh and I’m a software engineer and I am working towards building a career in UI development. I have experience working in a multi-national start-up building Android and iOS applications and I have completed several personal projects spanning over several fields such as AR/VR, game development, Android app development, etc.`,
+  prodBubble:"Product Management",
+  digitalMarketingBubble: "Digital Marketing",
+  projectManagementBubble:"Project Management",
+  brandManagementBubble:"Brand Management",
+  aboutText: `Hi! I’m Harsh and I'm a passionate aspiring product manager driven by the thrill of designing and delivering impactful tech products. My journey began in software development, where I honed my skills in React JS, GraphQL, and agile methodologies while building features that increased user satisfaction by 15% and mobile app adoption by a whopping 40%. Collaboration is my fuel, be it with UI/UX designers, product managers, or other teams. I'm a data enthusiast, leveraging insights to refine the user experience and drive business goals.`,
 };
 export default data;

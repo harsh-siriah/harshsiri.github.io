@@ -10,6 +10,7 @@
   overflow: hidden;
   padding: 1em;
   padding-top: 0.8em;
+  cursor: default;
 }
 
 #light .bubble-text {
@@ -27,9 +28,9 @@
   background-color: white;
 }
 
-.bubble:hover {
+.bubble-hover:hover {
   height: 100%;
-  cursor: default;
+  
 }
 
 .intro-bubble-technologies {

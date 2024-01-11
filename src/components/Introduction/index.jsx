@@ -11,8 +11,26 @@ function Introduction(props) {
       <h1 className="intro-text intro-title-text ">{copyTexts.name}</h1>
       <div className="intro-cells-container">
         <Bubble
-          text={copyTexts.bubble1}
+          text={copyTexts.prodBubble}
           className="intro-cells"
+        />
+        <Bubble
+          text={copyTexts.brandManagementBubble}
+          className="intro-cells"
+        />
+        <Bubble
+          text={copyTexts.digitalMarketingBubble}
+          className="intro-cells"
+        />
+        <Bubble
+          text={copyTexts.projectManagementBubble}
+          className="intro-cells"
+        />
+      </div>
+      <div className="intro-cells-container">
+        <Bubble
+          text={copyTexts.bubble1}
+          className="intro-cells bubble-hover"
           technologies={[
             TechnologyNames.Android,
             TechnologyNames.ReactNative,
@@ -21,7 +39,7 @@ function Introduction(props) {
         />
         <Bubble
           text={copyTexts.bubble2}
-          className="intro-cells"
+          className="intro-cells bubble-hover"
           technologies={[
             TechnologyNames.Html,
             TechnologyNames.ReactJS,
@@ -30,7 +48,7 @@ function Introduction(props) {
         />
         <Bubble
           text={copyTexts.bubble3}
-          className="intro-cells"
+          className="intro-cells bubble-hover"
           technologies={[TechnologyNames.Unity, TechnologyNames.CSharp]}
         />
       </div>

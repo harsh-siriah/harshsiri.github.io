@@ -4,6 +4,7 @@ const ProjectNames = {
   SpellABee: "spell_a_bee",
   VrHangouts: "vr_hangouts",
   Canary: "canary",
+  Moxie: "moxie",
 };
 
 export default ProjectNames;

@@ -1,30 +1,23 @@
 const data = {
-  items: ["vit", "jog", "gurukul"],
+  items: ["cornell","vit"],
   data: {
+    cornell: {
+      id: "cornell",
+      year: "2024",
+      name: "Cornell University",
+      degree: "Masters in Engineering Management",
+      url: "https://www.engmanagement.cornell.edu/em",
+      content: ["GPA - 3.88"],
+
+    },
     vit: {
       id: "vit",
       year: "2021",
       name: "Vishwakarma Institute of Technology, Pune",
       degree: "Bachelor of Technology - Computer Engineering",
       url: "https://www.vit.edu/",
-      content: ["GPA - 9.51"],
-    },
-    jog: {
-      id: "jog",
-      year: "2017",
-      name: "P. Jog Junior College, Pune",
-      degree: "Senior Secondary - Science",
-      url: "https://pjogcolleges.com/",
-      content: ["Grade - 80%"],
-    },
-    gurukul: {
-      id: "gurukul",
-      year: "2015",
-      name: "S.E.S Gurukul School, Pune",
-      degree: "Secondary",
-      url: "https://gurukulpune.edu.in/",
-      content: ["CGPA - 8"],
-    },
+      content: ["GPA - 9.51 / 10"],
+    }
   },
 };
 

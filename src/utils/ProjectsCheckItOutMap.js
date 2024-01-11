@@ -30,5 +30,12 @@ const data = {
       url: "https://github.com/PLG-Works/applogger",
     },
   ],
+  [ProjectNames.Moxie]: [
+    {
+      technology: TechnologyNames.Internet,
+      url: "https://truesparrow.com/case-study/moxie",
+    },
+    
+  ],
 };
 export default data;

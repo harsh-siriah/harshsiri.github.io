@@ -6,5 +6,6 @@ const projectAssets = {
   [ProjectNames.SpellABee]: require("./SpellABee/spell-a-bee.jpeg"),
   [ProjectNames.Canary]: require("./Canary/Canary-main.png"),
   [ProjectNames.AppLogger]: require("./AppLogger/applogger-logo.png"),
+  [ProjectNames.Moxie]: require("./Moxie/moxie-logo.png"),
 };
 export default projectAssets;

@@ -19,11 +19,13 @@
           "id": "mloop",
           "tab-title": "ModernLoop",
           "title": "Software Engineer",
-          "date": "Nov 2022 - Now",
+          "date": "Nov 2022 - Aug 2023",
           "location": "Pune, India (Remote)",
           "content": [
-            "Working on ModernLoop website using ReactJS",
-            "Collaborated with product, UX, and other engineering teams to improve the application experience."
+            "Primarily contributed to the frontend development of the ModernLoop web app using React JS and GraphQL.",
+            "Led the development of the Upcoming Events user-facing dashboard. After quantitative analysis, the feature was highly praised by eight users, which led to a 15% increase in user satisfaction and user feedback was integrated into the app.",
+            "Collaborated across teams, participated in design jams with UI/UX designers, brainstormed product ideas and assessed project outcomes with product managers, and optimized app performance while introducing new coding standards like GraphQL fragments among developers.",
+            "Independently developed an innovative AI-powered system for auto-generating email templates, reducing email template generation times by 80%, saving an average of 4 hours per recruiter per week."
           ]
         },
         "plg": {

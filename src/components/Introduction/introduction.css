@@ -58,6 +58,7 @@ h3 {
 
 .intro-cells-container {
   display: flex;
+  margin: 10px 0
 }
 
 @keyframes fadeInDown {

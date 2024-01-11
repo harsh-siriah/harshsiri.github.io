@@ -6,12 +6,15 @@ import CanaryContent from "./ProjectContent/Canary";
 import ProjectsCheckItOutMap from "./ProjectsCheckItOutMap";
 import SpellABeeContent from "./ProjectContent/Spell-A-Bee";
 import AppLoggerContent from "./ProjectContent/AppLogger";
+import MoxieContent from "./ProjectContent/Moxie";
 
 const ProjectData = {
   items: [
-    ProjectNames.AppLogger,
-    ProjectNames.Canary,
+
+    ProjectNames.Moxie,
     ProjectNames.VrHangouts,
+    ProjectNames.Canary,
+    ProjectNames.AppLogger,
     ProjectNames.Petronus,
     ProjectNames.SpellABee,
   ],
@@ -64,6 +67,22 @@ const ProjectData = {
         "React Native library to help you and your team backtrace testing steps, and get session details and device information. Securely!",
       content: AppLoggerContent,
       project_check_it_out: ProjectsCheckItOutMap[ProjectNames.AppLogger],
+    },
+    [ProjectNames.Moxie]: {
+      id: ProjectNames.Moxie,
+      title: "Moxie",
+      subtitle: "React Native app with an online marketplace of fitness coaches",
+      technologies: [
+        TechnologyNames.ReactNative,
+        TechnologyNames.Android,
+        TechnologyNames.iOS,
+        TechnologyNames.Firebase,
+        TechnologyNames.Github,
+      ],
+      summary:
+        "An all-in-one solution for fitness coaches",
+      content: MoxieContent,
+      project_check_it_out: ProjectsCheckItOutMap[ProjectNames.Moxie],
     },
   },
 };
