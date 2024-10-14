@@ -6,16 +6,20 @@ import CanaryContent from "./ProjectContent/Canary";
 import ProjectsCheckItOutMap from "./ProjectsCheckItOutMap";
 import SpellABeeContent from "./ProjectContent/Spell-A-Bee";
 import AppLoggerContent from "./ProjectContent/AppLogger";
+import BridgeContent from "./ProjectContent/Bridge";
+import KnobContent from "./ProjectContent/Knob";
 import MoxieContent from "./ProjectContent/Moxie";
 
 const ProjectData = {
   items: [
 
+    ProjectNames.Bridge,
+    ProjectNames.Petronus,
+    ProjectNames.Knob,
     ProjectNames.Moxie,
     ProjectNames.VrHangouts,
     ProjectNames.Canary,
     ProjectNames.AppLogger,
-    ProjectNames.Petronus,
     ProjectNames.SpellABee,
   ],
   data: {
@@ -67,6 +71,31 @@ const ProjectData = {
         "React Native library to help you and your team backtrace testing steps, and get session details and device information. Securely!",
       content: AppLoggerContent,
       project_check_it_out: ProjectsCheckItOutMap[ProjectNames.AppLogger],
+    },
+    [ProjectNames.Bridge]: {
+      id: ProjectNames.Bridge,
+      title: "Bridge",
+      subtitle: "Helping pet owners say goodbye",
+      technologies: [
+        TechnologyNames.Android,
+        TechnologyNames.iOS,
+      ],
+      summary:
+        "Introducing Bridge – your trusted companion in navigating the sensitive journey of pet end-of-life care. Born from a collective desire to ease the emotional burden of making difficult decisions for beloved pets, Bridge is more than just an app – it's a beacon of support, understanding, and compassion during challenging times.",
+      content: BridgeContent,
+      project_check_it_out: ProjectsCheckItOutMap[ProjectNames.Bridge],
+    },
+    [ProjectNames.Knob]: {
+      id: ProjectNames.Knob,
+      title: "The Knob",
+      subtitle: "Simplifying Your Vintage Hardware Transactions",
+      technologies: [
+        TechnologyNames.Internet
+      ],
+      summary:
+        "Developed \"The Knob,\" an online platform that connects carpenters with vintage hardware suppliers globally, promoting sustainable historic property restoration.",
+      content: KnobContent,
+      project_check_it_out: ProjectsCheckItOutMap[ProjectNames.Knob],
     },
     [ProjectNames.Moxie]: {
       id: ProjectNames.Moxie,

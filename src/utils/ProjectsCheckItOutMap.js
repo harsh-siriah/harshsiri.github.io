@@ -37,5 +37,19 @@ const data = {
     },
     
   ],
+  [ProjectNames.Bridge]: [
+    {
+      technology: TechnologyNames.Internet,
+      url: "https://drive.google.com/file/d/1673851j9wjEnRljccSd-EgYI6Qhpwi8m/view?usp=sharing",
+    },
+    
+  ],
+  [ProjectNames.Knob]: [
+    {
+      technology: TechnologyNames.Internet,
+      url: "https://drive.google.com/file/d/136As2TSTckvYqqJcW9LXpIKgLl0IFjFa/view?usp=sharing",
+    },
+    
+  ],
 };
 export default data;

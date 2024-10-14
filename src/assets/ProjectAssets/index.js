@@ -7,5 +7,7 @@ const projectAssets = {
   [ProjectNames.Canary]: require("./Canary/Canary-main.png"),
   [ProjectNames.AppLogger]: require("./AppLogger/applogger-logo.png"),
   [ProjectNames.Moxie]: require("./Moxie/moxie-logo.png"),
+  [ProjectNames.Bridge]: require("./Bridge/logo.png"),
+  [ProjectNames.Knob]: require("./Knob/Poster.png"),
 };
 export default projectAssets;

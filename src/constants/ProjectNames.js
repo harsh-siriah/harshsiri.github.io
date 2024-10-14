@@ -5,6 +5,8 @@ const ProjectNames = {
   VrHangouts: "vr_hangouts",
   Canary: "canary",
   Moxie: "moxie",
+  Bridge: "bridge",
+  Knob: "knob",
 };
 
 export default ProjectNames;

@@ -6,7 +6,7 @@ import "./ContactPage.css";
 import { Links } from "../../utils/links";
 import { GithubLogoSvg, LinkedInLogoSvg, CvIconSvg } from "../../assets";
 
-const profImage = require("../../assets/Prof_Image.png");
+const profImage = require("../../assets/Prof_Image.jpg");
 
 function ContactPage() {
   return (
@@ -94,10 +94,9 @@ const styles = {
     width: "100%",
     textAlign: "center",
     textTransform: "uppercase",
-    marginTop: "10vh",
   },
   profImage: {
-    height: "30%",
+    height: '30vh',
   },
   separator: {
     width: "20vw",

@@ -5,6 +5,8 @@
       "id": "work-experience",
       "title": "Work Experience",
       "items": [
+        "modernloop",
+        "open",
         "mloop",
         "plg",
         "moxie",
@@ -15,6 +17,31 @@
         "ntu"
       ],
       "data": {
+        "modernloop": {
+          "id": "modernloop",
+          "tab-title": "ModernLoop",
+          "title": "Product Manager Intern",
+          "date": "Jun 2024 - Aug 2024",
+          "location": "Remote",
+          "content": [
+            "Conducted user research and created product requirement documents for a B2B SaaS platform.",
+            "Collaborated with cross-functional teams to develop and prototype innovative solutions.",
+            "Managed multiple projects, including Zoom Hosts Pool, Feedback Writing Time, and Buffer Time."
+          ]
+        },
+        "open": {
+          "id": "open",
+          "tab-title": "Open Education Technologies",
+          "title": "Product Marketing Intern",
+          "date": "Jun 2024 - Aug 2024",
+          "location": "Philadelphia, Pennsylvania, United States · Remote",
+          "content": [
+            "Conducted market research and competitor analysis to enhance marketing strategies.",
+            "Developed SEO-friendly content and assisted in digital marketing campaigns.",
+            "Managed social media platforms and email marketing initiatives.",
+            "Assisted with CRM tasks and customer data analysis."
+          ]
+        },
         "mloop": {
           "id": "mloop",
           "tab-title": "ModernLoop",

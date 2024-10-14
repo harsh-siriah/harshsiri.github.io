@@ -19,8 +19,10 @@ function Projects() {
     return (
       <Carousel
         indicators={false}
+        pause='hover'
         activeIndex={index}
         onSelect={handleSelect}
+        defaultActiveIndex={0}
         prevIcon={
           <span>
             <LeftArrowIconSvg
