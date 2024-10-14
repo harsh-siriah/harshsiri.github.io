@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a6cee08b.css",
-    "main.js": "/static/js/main.3f3f5388.js",
+    "main.js": "/static/js/main.9302c777.js",
     "static/js/787.791e9c38.chunk.js": "/static/js/787.791e9c38.chunk.js",
     "static/media/applogger-working.gif": "/static/media/applogger-working.1c9056ed38649c62cda3.gif",
     "static/media/roomcreation.gif": "/static/media/roomcreation.488269d3a5192c36dbcc.gif",
@@ -11,12 +11,21 @@
     "static/media/homescreen.gif": "/static/media/homescreen.3452b0e38cb93e44dedb.gif",
     "static/media/Canary-main-gif.gif": "/static/media/Canary-main-gif.2cbd79526e3788675be5.gif",
     "static/media/web+mobile.jpg": "/static/media/web+mobile.d706f86e9b5c7be23628.jpg",
-    "static/media/Prof_Image.png": "/static/media/Prof_Image.d4682f63248a3a9535d5.png",
+    "static/media/Prof_Image.jpg": "/static/media/Prof_Image.c29118db78acb9a16692.jpg",
     "static/media/petronus_logo.png": "/static/media/petronus_logo.629d439692281b3425d9.png",
     "static/media/moxie-pass.jpg": "/static/media/moxie-pass.a1c140925abfdb65b14b.jpg",
     "static/media/flowchart.png": "/static/media/flowchart.7115608e5383fad3f87f.png",
+    "static/media/market_sizing.png": "/static/media/market_sizing.7fd91ff9dcd0bb888d5e.png",
+    "static/media/Poster.png": "/static/media/Poster.7d404b6292b48c9b8dec.png",
+    "static/media/grief.jpg": "/static/media/grief.915bc29d70592dcc9c9e.jpg",
     "static/media/roomcreationactivity.png": "/static/media/roomcreationactivity.2d24d7e6722f28c8a880.png",
     "static/media/roomjoiningactivity.png": "/static/media/roomjoiningactivity.71f6a518c91a3d2b934e.png",
+    "static/media/resources.jpg": "/static/media/resources.d352880b6660dfc0bb0e.jpg",
+    "static/media/Intro.jpg": "/static/media/Intro.51e56c91970ad7129739.jpg",
+    "static/media/competitive_edge.png": "/static/media/competitive_edge.d0fdf9aeffbb75fcee9d.png",
+    "static/media/check-in.jpg": "/static/media/check-in.7a0ad49743821a1f0348.jpg",
+    "static/media/insights.jpg": "/static/media/insights.d3edff40235fe430289a.jpg",
+    "static/media/logo.png": "/static/media/logo.5b2447c0f8b295ecd278.png",
     "static/media/list-page.jpeg": "/static/media/list-page.e9654c4b21b9ed9e96e7.jpeg",
     "static/media/HS.png": "/static/media/HS.948460a20890cde46f39.png",
     "static/media/roomjoiningusecase.png": "/static/media/roomjoiningusecase.0d03ee6e184b2e950f48.png",
@@ -55,11 +64,11 @@
     "static/media/cross-logo.svg": "/static/media/cross-logo.0b18fed956937ad7b6c3abaaf013ae82.svg",
     "static/media/list-logo.svg": "/static/media/list-logo.495d5685955df76926729664ada91861.svg",
     "main.a6cee08b.css.map": "/static/css/main.a6cee08b.css.map",
-    "main.3f3f5388.js.map": "/static/js/main.3f3f5388.js.map",
+    "main.9302c777.js.map": "/static/js/main.9302c777.js.map",
     "787.791e9c38.chunk.js.map": "/static/js/787.791e9c38.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a6cee08b.css",
-    "static/js/main.3f3f5388.js"
+    "static/js/main.9302c777.js"
   ]
 }
